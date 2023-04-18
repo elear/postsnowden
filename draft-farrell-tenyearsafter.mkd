@@ -1,0 +1,82 @@
+---
+title: Reflections on Ten Years Past The Snowden Revelations
+abbrev: Ten Years After
+docname: draft-farrell-tenyearsafter-00
+category: info
+submissionType: independent
+
+ipr: trust200902
+keyword: Internet-Draft
+
+stand_alone: yes
+pi: [toc, sortrefs, symrefs]
+
+author:
+ -
+    ins: S. Farrell
+    name: Stephen Farrell
+    org: Trinity College, Dublin
+    country: Ireland
+    email: stephen.farrell@cs.tcd.ie
+ -
+    ins: F. Badii
+    name: Farzaneh Badii
+    email: farzaneh.badii@gmail.com
+ -
+    ins: B. Schneier
+    name: Bruce Schneier
+    email: schneier@schneier.com
+    
+--- abstract
+
+This memo contains the thoughts and recountings of events that
+transpired during and after the release of information about the
+NSA by Edward Snowden.  There are three perspectives: that of
+a security area director of the IETF, a human rights expert, and
+of someone who was involved with sifting through the information
+to responsibly inform the public.  The purpose of this memo is
+to provide some historical perspective, while at the same time
+offering a view as to what security challenges the technical
+community should consider.
+
+--- middle
+
+Introduction
+============
+
+TBD
+
+Stephen
+=======
+
+
+
+Farzaneh
+========
+
+
+
+
+Bruce
+=====
+
+
+
+Security Considerations
+=======================
+
+Well...
+
+IANA Considerations
+===================
+
+No changes to IANA processes are made by this memo.
+
+--- back
+
+Changes from Earlier Versions
+=============================
+
+Draft -00:
+
+  * Initial revision
