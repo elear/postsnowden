@@ -26,6 +26,124 @@ author:
     ins: B. Schneier
     name: Bruce Schneier
     email: schneier@schneier.com
+
+normative:
+
+informative:
+
+    ACME:
+        title: Automated Certificate Management Environment (ACME)
+        target: https://datatracker.ietf.org/wg/acme/
+        author:
+            organization: IETF
+        date: 2023
+    BoF-session:
+        title: IETF 88 BoF session
+        target: https://www.ietf.org/proceedings/88/perpass.html
+        author:
+            organization: IETF
+        date: 2013
+    CFRG:
+        title: IRTF Crypto Forum (CFRG) 
+        target: https://datatracker.ietf.org/rg/cfrg/
+        author:
+            organization: IETF
+        date: 2023
+    CURDLE:
+        title: curdle WG
+        target: https://datatracker.ietf.org/wg/curdle/
+        author:
+            organization: IETF
+        date: 2023
+    dual-ec:
+        target: https://eprint.iacr.org/2015/767.pdf
+        title: Dual EC, A standardized back door
+        author:
+            -
+                name: Daniel Bernstein
+            - 
+                name: Tanja Lange
+            -
+                name: Ruben Niederhagen
+        date: 2016
+    LE:
+        target: https://dl.acm.org/doi/pdf/10.1145/3319535.3363192
+        title: Let's Encrypt - an automated certificate authority to encrypt the entire web
+        author:
+            -
+                name: Josh Aas 
+            -
+                name: Richard Barnes
+            -
+                name: Benton Case
+            -
+                name: Zakir Durumeric
+            -
+                name: Peter Eckersley
+            -
+                name: Alan Flores-L{\'o}pez
+            -
+                name: Alex Halderman
+            -
+                name: Jacob Hoffman-Andrews
+            -
+                name: James Kasten
+            -
+                name: Eric Rescorla
+            -
+                name: Seth Shoen
+            -
+                name: Brad Warren
+        date: 2019
+    MADINAS: 
+        title: MADINAS WG
+        target: https://datatracker.ietf.org/wg/madinas/)
+        author:
+            organization: IETF
+        date: 2023
+    perpass:
+        title: perpass mailing list
+        target: https://mailarchive.ietf.org/arch/browse/perpass/
+        author:
+            organization: IETF
+        date: 2023
+    plenary-video:
+        title: IETF 88 Pleary video
+        target: https://www.youtube.com/watch?v=oV71hhEpQ20&pp=ygUQaWV0ZiA4OCBwbGVuYXJ5IA%3D%3D
+        author:
+            organization: IETF
+        date: 2013
+    refs-to-7258:
+        title: References to RFC7258
+        target: https://datatracker.ietf.org/doc/rfc7258/referencedby/)
+        author:
+            organization: IETF
+        date: 2023
+    timeline:
+        title: Global surveillance disclosures (2013–present)
+        target: https://en.wikipedia.org/wiki/Global_surveillance_disclosures_(2013%E2%80%93present)
+        author:
+            organization: Wikimedia foundation
+        date: 2023
+    STRINT:
+        title: A W3C/IAB workshop on Strengthening the Internet Against Pervasive Monitoring (STRINT)
+        target: https://www.w3.org/2014/strint/
+        author:
+            organization: IETF
+        date: 2014
+    Toronto:
+        title: Canada Used Airport Wi-Fi To Track Travelers, Snowden Leak Alleges
+        author:
+            organization: National Public Radio
+        target: https://www.npr.org/sections/thetwo-way/2014/01/31/269418375/airport-wi-fi-used-to-track-travelers-snowden-leak-alleges
+    UTA:
+        title: Using TLS in Applications working group (UTA) working group
+        author:
+            organization: IETF
+        date: 2023
+        target: https://datatracker.ietf.org/wg/uta/
+
+    
     
 --- abstract
 
@@ -46,10 +164,182 @@ Introduction
 
 TBD
 
-Stephen
+IETF and Internet Technical community reaction - Stephen
 =======
 
+Disclaimer (better elsewhere in document): the text below provides the author's
+perspective and of course is limited and likely omits important things.
 
+In 2013, the IETF and, more broadly, the Internet technical, security and
+privacy research communities, were surprised by the surveillance and attack
+efforts exposed by the Snowden revelations.  {{timeline}} While the
+potential for such was known, it was the scale and pervasiveness of the
+activities disclosed that was alarming and, I think it fair to say, quite
+annoying, for very many Internet engineers.
+
+As for the IETF's reaction, informal meetings during the July 2013 IETF meeting
+in Berlin indicated that IETF participants considered that these revelations
+showed that we needed to do more to improve the security and privacy properties
+of IETF protocols, and to help ensure deployments made better use of the
+security and privacy mechanisms that already existed. In August, the IETF setup
+a new mailing list {{perpass}} that ended up being a useful venue for triaging
+proposals for work on these topics. At the November 2013 IETF meeting, there
+was a lively and very well attended plenary session {{plenary-video}} on
+"hardening the Internet" against such attacks, followed by a "birds of a
+feather" {{BoF-session}} devoted to more detailed discussion of possible
+actions in terms of new working groups, protcols and best-current-practice
+(BCP) documents that could help improve matters.  This was followed in
+February/March 2014 by a joint IAB/W3C workshop on "strengthening the Internet
+against pervasive monitoring" {{STRINT}} in London attended by 150 engineers
+(still the only IAB workshop in my experience where we needed to setup a
+wait-list for people who wanted to attend after capacity for the venue was
+reached:-). The workshop report was eventually published as {{?RFC7687}} in
+2015, but in the meantime work proceeeded on a best-current-practice document
+codifying that the IETF community considered that "pervasive monitoring is an
+attack" {{?RFC7258}} (aka BCP188). The IETF last-call discussion for that short
+document included more than 1000 emails - while there was broad agreement on
+the overall message, a number of IETF participants considered enshrining that
+message in the RFC series and IETF processes was controversial, but in any case
+the BCP was published in May 2014. The key statement on which rough consensus
+was reached is in the abstract of RFC7258 and says "Pervasive monitoring is a
+technical attack that should be mitigated in the design of IETF protocols,
+where possible." That document has since been referenced {{refs-to-7258}} by
+many IETF working groups and RFCs as justifying additional work on security and
+privacy. Throughout this period and beyond, the repercussions of the Snowden
+revelations was also a major and ongoing agenda item for both of the IETF's
+main technical management bodies - the IAB and the IESG (on which the author of
+this section served at the time).
+
+So far, I've really only described the processes with which the IETF dealt with
+the attacks, but there was of course also much technical work started by IETF
+participants that was at least partly motivated by the Snowden revelations.
+
+In November 2013 a working group was established to document better practices
+for using TLS in applications {{UTA}} so that deployments would be less at risk
+in the face of some of the attacks related to stripping TLS or having
+appliations mis-use TLS APIs or parameters.  Similar work was done to update
+recommendations for use of cryptography in other protocols in the {{CURDLE}}
+working group later.  The CURDLE working group was to an extent created to
+enable use of a set of new elliptic curves that had been documented by the IRTF
+crypto forum research group. {{CFRG}} That work in turn had been partly
+motivated by (perhaps ultimately unfounded) concerns about elliptic curves
+defined in NIST standards, following the dual-ec debacle {{dual-ec}} where a
+NIST random number generator had been deliberately engineered to produce output
+that could be vulnerable to NSA attack.
+
+Work to develop a new version of TLS was started in 2014, mainly due to
+concerns that TLSv1.2 and earlier version implementations had been shown to be
+vulnerable to a range of attacks over the years. The work to develop TLSv1.3
+{{?RFC8446}} also however aimed to encrypt more of the handshake so as to
+expose less information to network observers - a fairly direct result of the
+Snowden relevations.  Work to further improve TLS in this respect continues
+today using the so-called encrypted client hello (ECH) {{?I-D.ietf-tls-esni}}
+mechanism to remove one of the last privacy leaks present in current TLS.
+
+Work on ECH was enabled by significant developments to encrypt DNS traffic,
+using DoT {{?RFC7858}} or DoH {{?RFC8484}} which also started as a result of
+the Snowden relevations. Prior to that, privacy hadn't really been considered
+when it came to DNS data or (more importantly) the act of accessing DNS data.
+The trend towards encrypting DNS traffic represents a significant change for
+the Internet, both in terms of reducing cleartext, but also in terms of moving
+points-of-control. The latter aspect was, and remains, controversial, but the
+IETF did it's job of defining new protocols that can enable better DNS privacy.
+Work on HTTP version 2 {{?RFC7540}} and QUIC {{?RFC9000}} further demonstrates
+the trend in the IETF towards always-encrypting protocols as the new norm, at
+least at and above the transport layer.
+
+Of course, not all these initiatives bore fruit, for example attempts to define
+a new MPLS encryption mechanism {{?I-D.farrelll-mpls-opportunistic-encrypt}}
+foundered due to a lack of interest and the existence of the already deployed
+IEEE MACSEC scheme. But there has been a fairly clear trend towards trying to
+remove cleartext from the Internet as a precursor to providing better privacy
+when considering network observers as attackers.
+
+The IETF of course, forms only one part of the broader Internet technical
+community, and there were many non-IETF activities triggered by the Snowden
+revelations, a number of which also eventually resulted in new IETF work to
+standardise better security and privacy mechanisms developed elsewhere.
+
+In 2013, the web was largely unencrypted despite HTTPS being relatively
+usable and that was partly due to problems using the WebPKI at scale. The
+LetsEncrypt {{LE}} initiatve was established in 2015 to try move the web
+towards being fully encryted and has been extremely successful in helping
+achieve that goal.  Subsequently, the automation protocols developed for
+LetsEncrypt were standardised in the IETF's ACME {{ACME}} working group.
+
+In 2013, most email transport between mail servers was cleartext,
+directly enabling some of the attacks documented in the Snowden documents.
+Significant effort by major mail services and MTA software developers since
+then have resulted in more than 90% of email being encrypted between mail
+servers and various IETF protocols have been defined in order to improve that
+situation, e.g., MTA-STS. {{?rfc8461}}
+
+Lastly, MAC addressees have historically been long-term fixed values visble to
+local networks (and beyond), which enabled some tracking attacks that were
+documented in the Snowden documents. {{Toronto}} The IEEE 802
+standards group recognised this weakness and started work on MAC address
+randomisation that in turn lead to the IETF's {{MADINAS}} working group that
+aims to ensure randomised MAC addresses can be used on the Internet without
+causing unintentional harm.
+
+In summary, the significantly large volume of technical work pursued in the
+IETF and elsewhere as a result of the Snowden revelations has focussed on two
+main things: decreasing the amount of plaintext that remains visible to network
+observers and secondly reducing the number of long-term identifiers that enable
+unexpected identification or re-identification of devices or users. This work
+is not by any means complete, nor is deployment universal, but significant
+progress has been made and the work continues even if the level of annoyance
+at the attack has faded somewhat over time.
+
+One should also note that there has been push-back against these improvements
+in security and privacy and the changes they cause for deployments. That has
+come from more or less two camps - those on whom these improvements force
+change tend to react badly, but later figure out how to adjust. The second camp
+being those who seemingly prefer not to strenghten security so as to for
+example continue to achieve what they call "visibility" even in the face of the
+many engineers who correctly argue that such an anti-encryption approach
+inevitably leads to worse security overall. The recurring nature of this kind
+of push-back is nicely illustrated by {{?RFC1984}}. That informational document
+was published in 1996 as an IETF response to an early iteration of the
+perennial "encryption is bad" argument. In 2015, the unmodified 1996 text was
+upgraded to a best-current-practice (BCP200) as the underlying arguments have
+not, and will not, change.
+
+Looking back on all the above from a 2023 vantage point, I think one can say
+that, as a community of Internet engineers, we got a lot right, but that today
+there's way more that needs to be done to better protect the security and
+privacy of people who use the Internet. In particular, we (the technical
+community) haven't done nearly as good a job at countering surveillance
+capitalism which has exploded in the last decade. In part, that's because many
+of the problems are outside of the scope of bodies such as the IETF, for
+example, intrusive back-end sharing of people's data for advertising purposes
+can't really be addressed via Internet protocols.  However, I also think it's
+likely the case that the real level of annoyance felt with respect to the
+Snowden revelations seems (in general) to not be felt nearly as much when it
+comes to the legal but privacy-invasive activities of major employers of
+Internet engineers. It's noteworthy that RFC7258 doesn't consider that bad
+actors are limited to governments and personally, I think many advertising
+industry schemes for collecting data are egregious examples of pervasive
+monitoring and hence ought also be considered an attack on the Internet that
+ought be mitigated where possible.  However, the Internet technical community
+clearly hasn't acted in that way over the last decade.
+
+Perhaps that indicates that Internet engineers and the bodies in which they
+congregate need to place much more emphasis on standards for ethical behaviour
+than has been the case for the first half-century of the Internet.  And while
+it would be good to see the current leaders of Internet bodies work to make
+progress in that regard, at the time of writing, it seems more likely that
+Government regulators will be the ones to try force better behaviour. That of
+course comes with a significant risk of having regulations that stymie the kind
+of permissionless innovation that characterised many earlier Internet
+successes.
+
+So while we got a lot right in our reaction to Snowden's revelations,
+currently, we have a "worse" Internet.  Nonetheless, I do still hope to see a
+sea-change there though, as the importance of real Internet security and
+privacy for people becomes utterly obvious to all, even the most hard core
+capitalists and government signals intelligence agencies, but that's perhaps
+because I'm just an optimist:-)
 
 Farzaneh
 ========
