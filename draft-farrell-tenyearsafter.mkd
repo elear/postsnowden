@@ -31,7 +31,12 @@ author:
 normative:
 
 informative:
-
+    guard2013:
+        title: NSA collecting phone records of millions of Verizon customers daily
+        author:
+          name: Glenn Greenwald
+          organization: The Guardian
+        date: 6 Jun 2013
     ACME:
         title: Automated Certificate Management Environment (ACME)
         target: https://datatracker.ietf.org/wg/acme/
@@ -163,7 +168,41 @@ community should consider.
 Introduction
 ============
 
-TBD
+On June 6th, 2013, an article appeared in _The Guardian_
+{{guard2013}} that was the beginning of a series of what have come to
+be known as revelations about the activities of the United States
+National Security Agency (NSA).  These activities included, amongst
+others, secret court orders, secret agreements for the receipt of
+so-called "meta-information" that includes source, destination, and
+timing of communications, tapping of communications lines, and other
+activities.  The breathtaking scope of the operations shocked the
+Internet technical community, and led to a sea change within the
+IETF, IAB, and many parts of the private sector.
+
+Now that some years have past, it seems appropriate to reflect on that
+period of time, what effect the community's actions had, where
+security has improved, how the threat surface has evolved, what areas
+haven't improved, and where the community might invest future efforts.
+
+This compendium of essays first brings us back to 2013 with an essay
+by Bruce Schneier, about how it was for him and others to report what
+was happening, and the mindset of those involved.  Next, Stephen
+Farrell reviews the technical community's reactions, technical
+advances, and where threats remain.  Then Farzaneh Badii discusses the
+impact of those advances – or lack thereof – on human rights.  Finally
+Steve Bellovin...
+
+Note that each essay reflects the views of the contributor of that
+work, and may not reflect the views of others.
+
+Although four people write here about their views, readers are invited
+to reflect for themselves about that time, the intervening time, and
+what we as a community can do to address security and privacy of
+citizens of the world.
+
+
+ -- Eliot Lear, Independent Submissions Editor
+
 
 IETF and Internet Technical community reaction - Stephen
 =======
