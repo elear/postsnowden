@@ -29,7 +29,7 @@ author:
     email: schneier@schneier.com
  -
     ins: S. M. Bellovin
-    name: Steve Bellovin
+    name: Steven M. Bellovin
     org: Columbia University
     email: smb@cs.columbia.edu
 
@@ -831,7 +831,7 @@ Farzaneh Badii\: The (non)Impact of Snowden on Human Rights
 
 
 
-Steve Bellovin\: Governments and Cryptography: The Crypto Wars
+Steven M. Bellovin\: Governments and Cryptography: The Crypto Wars
 =================
 Historical Background
 ----------------------
