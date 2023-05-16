@@ -8,7 +8,6 @@ submissionType: independent
 ipr: trust200902
 keyword: Internet-Draft
 
-stand_alone: yes
 pi: [toc, sortrefs, symrefs]
 
 author:
@@ -404,6 +403,45 @@ informative:
           "Rapid7 Blog":
        date: 2015
        target: https://www.rapid7.com/blog/post/2015/12/20/cve-2015-7755-juniper-screenos-authentication-backdoor/
+    Doria2012:
+       title: >
+          Human Rights and Internet Protocols: Comparing
+          Processes and Principles
+       author:
+          -
+             ins: A. Doria
+             name: Avri Doria
+          -
+             ins: J. Liddicoat
+             name: Joy Liddicoat
+       date: 2012
+       seriesinfo:
+          "The Internet Society":
+       target: https://www.internetsociety.org/resources/doc/2012/human-rights-and-internet-protocols-comparing-processes-and-principles/
+    Garfinkel1995:
+       title: "GPG: Pretty Good Privacy"
+       author:
+          ins: S. Garfinkel
+          name: Simson Garfinkel
+       seriesinfo:
+          "O'Reilly and Associates":
+       date: 1995
+    Masnick2023:
+       title: The Unintended Consequences of Internet Regulation
+       author:
+         ins: M. Masnick
+         name: Mike Masnick
+       target: https://copia.is/library/unintended-consequences/
+       date: 2023
+    Roth2022:
+       title: Internet backbone provider shuts off service in Russia
+       author:
+          ins: E. Roth
+          name: Emma Roth
+       seriesinfo:
+          "The Verge":
+       target: https://www.theverge.com/2022/3/5/22962822/internet-backbone-provider-cogent-shuts-off-service-russia
+       date: March 5, 2022
 
 --- abstract
 
@@ -453,7 +491,7 @@ community have had – or not had, and what positive contribution the
 technical community can and should make to address security and
 privacy of citizens of the world.
 
- -- Eliot Lear, Independent Submissions Editor
+ -- Eliot Lear, Independent Submissions Editor for the RFC Series
 
 
 Bruce Schneier\: Snowden Ten Years Later
@@ -885,7 +923,7 @@ directly enabling some of the attacks documented in the Snowden documents.
 Significant effort by major mail services and MTA software developers since
 then have resulted in more than 90% of email being encrypted between mail
 servers and various IETF protocols have been defined in order to improve that
-situation, e.g., MTA-STS. {{?rfc8461}}
+situation, e.g., MTA-STS. {{?RFC8461}}
 
 Lastly, MAC addressees have historically been long-term fixed values visble to
 local networks (and beyond), which enabled some tracking attacks that were
@@ -954,10 +992,181 @@ privacy for people becomes utterly obvious to all, even the most hard core
 capitalists and government signals intelligence agencies, but that's perhaps
 because I'm just an optimist:-)
 
-Farzaneh Badii\: The (non)Impact of Snowden on Human Rights
+Farzaneh Badii\: Did Snowden’s revelations help with protecting human rights on the Internet?
 ========
 
+It is very difficult to scientifically measure the effect of Snowden's
+revelations on human rights and the Internet. Anecdotally, we have
+been witnessing dominant regulatory and policy approaches that impact
+technologies and services that are at the core of protecting human
+rights on the Internet. (A range of European Union laws that aims to
+address online safety or concentration of data. There are many more
+regulations that have an impact on the Internet.{{Masnick2023}}) There
+has been little progress in fixing technical and policy issues that
+help enable human rights. Snowden revelations did not have a
+revolutionary effect on our approach towards not using policies and
+technical means that have an effect on human rights, such as freedom
+of expression, freedom of association and assembly and privacy. It did
+not decrease the number of Internet shutdowns, nor the eagerness of
+authoritarian (and even to some extent democratic countries) to
+territorialize the Internet. Perhaps the revelations helped with the
+evolution of some technical and policy aspects.
 
+After Snowden’s revelations 10 years ago, engineers and advocates at
+the Internet Engineering Task Force (IETF) responded in a few
+ways. One prominent response was the issuance of a Best Current
+Practice document, “Pervasive Monitoring Is an Attack” {{?RFC7258}} by
+Farrell and Tschofenig. The responses to Snowden revelations did not
+mean that IETF had lost sight of issues such as privacy and
+surveillance. There were instances of resistance to surveillance in
+the past by engineers (we do not delve into how successful that was in
+protecting human rights). But historically, many engineers believed
+that widespread and habitual surveillance was too expensive to be
+practical. The revelations proved them wrong.
+
+Rights-centered activists were also involved with the IETF before the
+revelations. For example, staff from Center for Democracy and
+Technology (CDT) was undertaking work at the IETF (and was a member of
+the Internet Architecture Board) and held workshops about the
+challenges of creating privacy protective protocols and systems. The
+technical shortcomings that were exploited by the National Security
+Agency to carry out mass-scale surveillance were recognized by the
+IETF before the Snowden revelations {{Garfinkel1995}},{{?RFC6462}}. In
+2012, Joy Liddicoat and Avri Doria wrote a report at Internet Society
+which extensively discussed the processes and principles of human
+rights and Internet protocols {{Doria2012}}.
+
+Perhaps the Snowden revelations brought more attention to the IETF and
+its work as it related to important issues, such as privacy and
+freedom of expression. It might have also expedited and helped with
+more easily convening the Human Rights Protocol Considerations
+research group in the Internet Research Task Force (IRTF). Co-chaired
+by Niels ten Oever (who worked at Article 19 at the time) and Internet
+governance activist Avri Doria, the Internet Research Task Force in
+July 2015 chartered a Research Group on “Human Rights Protocol
+Considerations” (the HRPC RG). The charter of the HRPC RG stated that
+the group was established: “to research whether standards and
+protocols can enable, strengthen or threaten human rights, as defined
+in the UDHR and theInternational Covenant on Civil and Political
+Rights (ICCPR).”
+
+During the past decades, a few successful strides were made to create
+protocols that, when and if implemented, aim at protecting privacy of
+the users, as well as help with reducing pervasive surveillance. These
+efforts were in keeping with the consensus of the IETF found in RFC
+7258.  Sometimes these protocols have anti-censorship qualities as
+well. A few examples immediately come to mind: 1) Encryption of DNS
+queries (for example DNS over HTTPS); 2) ACME protocol underpinning
+the Lets Encrypt initiative and 3) Registration Data Access Protocol
+(RDAP){{?RFC7480}},{{?RFC7481}},{{?RFC9082}},{{?RFC9083}},{{?RFC7484}},
+{{?RFC8056}}.(It is debatable that RDAP had anything to do with
+Snowden revelations but it is still a good example and is finally
+being implemented.)
+
+DNS Queries over HTTPS protocol aimed to encrypt DNS queries. Four
+years after RFC 7258, DoH was developed to tackle both active and
+passive monitoring of DNS queries. It is also a tool that can help
+with combatting censorship. Lets Encrypt was not an Internet protocol,
+but it was an initiative that aimed to encrypt the web and later on
+some of the automation protocols were standardized in the IETF ACME
+working group. The Registration Data Access Protocol could solve a
+long term problem: redacting the domain name registrants (and IP
+address holders) sensitive, personal data but at the same time
+enabling legitimate access to the information. As to the work of HRPC
+research group, it has so far issued {{?RFC8280}} by ten Oever and
+Cath) and a number of informational Internet Drafts.
+
+While we cannot really argue that all the movements and privacy
+preserving protocols and initiatives that enable protecting human
+rights at the infrastructure layer directly result from Snowden
+revelations, I think it is safe to say that the revelations helped
+with expediting the resolution of some of the “technical” hesitations
+that had an effect on fixing Internet protocols that enabled
+protection of human rights.
+
+Unfortunately, Snowden revelations have not yet helped us meaningfully
+with adopting a human rights approach. We can’t agree on prioritizing
+human rights in our Internet communities for a host of reasons. This
+could be due to: 1) human rights are sometimes in conflict with each
+other 2) it is simply not possible to mitigate the human right
+violation through the Internet protocol 3) it is not obvious for the
+engineers before the fact how the Internet protocol contributes to
+enabling protection of human rights and how they can fix the problem
+4) the protocol is already there but market, law and a host of other
+societal and political issues do not allow for widespread
+implementation.
+
+IETF did not purposefully take a long time to adopt protocols that
+enabled human rights. There were technical and political issues that
+created barriers. For example, the IETF community attempted a few
+times before to create a protocol that would disclose the necessary
+information of IP holders and domain name registrants while at the
+same time protecting their data (CRIPS and IRIS are two
+examples). However, it was not until RDAP was developed and the
+General Data Protection Regulation (GDPR) was enacted that Internet
+Corporation for Assigned Names and Numbers had to consider instructing
+registries and registrars to implement RDAP and its community had to
+come up with a privacy compliant policy.  Overall, a host of
+regulatory and market incentives can halt or slow down the
+implementation of human rights enabling protocols and implementation
+could depend on other organizations with their own political and
+stakeholder conflicts.
+
+Sometimes the protocol is available, but the regulatory framework and
+the market do not allow for implementation. One curious example of
+this is sanctions and their effect on IP addresses of sanctioned
+nations. Imagine if we argue that registration of IPv4 is affected by
+sanctions because it is deemed as an economic resource and because of
+scarcity and monetization. In theory, if we move to IPv6, we can solve
+the problem of access to the resources because IPv6 is not a scarce
+resource. However, as we know, adoption of IPv6 depends not only on
+technical availability. Adoption of IPv6 won’t be the complete
+solution either and depends on laws and policies and the market.
+
+Sometimes there are arguments over implementation of a protocol
+because as it is perceived, while it can protect freedom of expression
+and reduce surveillance, it can hamper other human rights. For
+instance, we still have doubts about implementing DNS over HTTPS
+without seriously considering its contributions to fight with
+censorship and bring encryption to DNS queries. The arguments against
+implementation of DoH include protection of children online and lack
+of law enforcement access to data.
+
+Ironically, we advocate for connectivity and believe expressing
+oneself on the Internet is a human right, but when a war erupts, we
+resort to tools that impact that very concept. For example, some
+believe via imposing sanctions on critical properties of the Internet,
+we can punish the perpetrators of a war. The Regional Internet
+Registries that are in charge of registration of IP addresses have
+shown resilience to these requests. However, some tech-companies (-
+for example Cogent {{Roth2022}}) have not shied away from not serving
+sanctioned countries, even if it is over-compliance and could cause
+disconnecting ordinary people.
+
+Perhaps we can solve some of these problems by undertaking a thorough
+impact assessment and contextualization to reveal how and why Internet
+protocols affect human rights (something Fidler and I argued
+for{{?Badii2021=DOI.10.5325/jinfopoli.11.2021.0376}}). Contextualization and
+impact assessment can reveal how each Internet protocol or each line
+of code, in which systems, have an impact on which and whose human
+rights.
+
+The HRPC RG (which I am a part of) and the larger human rights and
+policy analyst communities are still struggling to analyze legal,
+social and market factors alongside the protocols to have a good
+understanding of what has an impact and what has to be changed. It is
+hard, but it is not impossible. If we thoroughly document and research
+the lifecycle of an Internet protocol and contextualize it, we might
+have a better understanding of how and if we can actually fix which
+parts of the protocol in order to protect human rights.
+
+Overall, the revelations did, to some extent, contribute to the
+evolution of our ideas and perspectives. Our next step should be to
+undertake research on the impact of Internet systems (including
+Internet protocols) on human rights, promote the implementation of
+protocols good for human rights through policy and advocacy and focus
+on which technical parts we can standardize to help with more
+widespread implementation of human rights enabling Internet protocols.
 
 
 Steven M. Bellovin\: Governments and Cryptography: The Crypto Wars
