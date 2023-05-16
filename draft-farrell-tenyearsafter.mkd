@@ -310,8 +310,100 @@ informative:
           "ABC News":
        date: May 12, 2014
        target: https://abcnews.go.com/blogs/headlines/2014/05/ex-nsa-chief-we-kill-people-based-on-metadata
-
-
+    Adrian2015:
+       title: >
+          Imperfect Forward Secrecy: How Diffie-Hellman Fails in Practice.
+       author:
+         -
+            ins: D. Adrian
+            name: David Adrian
+         -
+            ins: K Bhargavan
+            name: Karthikeyan Bhargavan
+         -
+            ins: Z. Durumeric
+            name: Zakir Durumeric
+         -
+            ins: P. Gaudry
+            name: Pierrick Gaudry
+         -
+            ins: M. Green
+            name: Matthew Green
+         -
+            ins: J. A. Halderman
+            name: J. Alex Halderman
+         -
+            ins:  N. Heninger
+            name: Nadia Heninger
+       seriesinfo:
+          "Proceedings of the 22th ACM Conference on Computer and Communications Security (CCS)":
+       target: https://weakdh.org/imperfect-forward-secrecy.pdf
+       date: 2015
+    Blaze1994:
+       title: Did Britain Sell Enigmas Postwar?
+       author:
+          ins: M. Blaze
+          name: Matt Blaze
+       seriesinfo:
+          "Dr. Enigma (blog)":
+       date: 1994
+       target: http://www.mattblaze.org/papers/eesproto.pdf
+    Checkoway2016:
+       title: A Systematic Analysis of the Juniper Dual EC Incident
+       author:
+          -
+             ins: S. Checkoway
+             name: Stephen Checkoway
+          -
+             ins: J. Maskiewicz
+             name: Jacob Maskiewicz
+          -
+             ins: C. Garman
+             name: Christina Garman
+          -
+             ins: J. Fried
+             name: Joshua Fried
+          -
+             ins: S. Cohney
+             name: Shaanan Cohney
+          -
+             ins: M. Green
+             name: Matthew Green
+          -
+             ins: N. Heninger
+             name: Nadia Heninger
+          -
+             ins: R.P. Weinmann
+             name: Ralf-Philipp Weinmann
+          -
+             ins: E. Rescorla
+             name: Eric Rescorla
+          -
+             ins: Hovav Shacham
+             name: Hovav Shacham
+       seriesinfo:
+          "Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security": "468–79"
+       date: 2016
+       target: https://dl.acm.org/citation.cfm?id=2978395
+    Levy2001:
+       title: >
+          Crypto: How the Code Rebels Beat the Government—Saving Privacy in the Digital Age
+       author:
+          ins: S. Levy
+          name: Steven Levy
+       seriesinfo:
+          Viking:
+       date: 2001
+    Moore2015:
+       title: >
+          CVE-2015-7755: Juniper ScreenOS Authentication Backdoor
+       author:
+          ins: H.D. Moore
+          name: H.D. Moore
+       seriesinfo:
+          "Rapid7 Blog":
+       date: 2015
+       target: https://www.rapid7.com/blog/post/2015/12/20/cve-2015-7755-juniper-screenos-authentication-backdoor/
 
 --- abstract
 
@@ -1082,7 +1174,7 @@ algorithm. Needless to say, both issues were problematic for what was
 intended to be open source software. Eventually, the criminal
 investigation into Zimmerman’s role in the spread of PGP overseas was
 dropped, but the threat of such investigations remained to deter
-others.
+others{{Levy2001}}.
 
 The TSD-3600 was another matter. AT&T was a major corporation that did
 not want to pick a fight with the U.S. government, but international
@@ -1095,9 +1187,9 @@ details, the key escrow mechanism allowed U.S. government
 eavesdroppers to consult a pair of (presumably secure) internal
 databases and decrypt all communications protected by the chip. The
 Clipper chip proved to be extremely unpopular with industry; that AT&T
-Bell Labs’ Matt Blaze found a weakness in the design, one that let you
-use Skipjack without the key escrow feature didn’t help its
-reputation.
+Bell Labs’ Matt Blaze found a weakness in the design{{Blaze1994}}, one
+that let you use Skipjack without the key escrow feature didn’t help
+its reputation.
 
 The third major development, SSL, was even trickier. SSL was aimed at
 e-commerce, and of course Netscape wanted to be able to sell its
@@ -1108,7 +1200,7 @@ NSA had agreed to 20 years earlier. (To get ahead of the story: there
 was a compromise mode of operation, wherein an export-grade browser
 could use strong encryption when talking to a financial
 institution. This hybrid mode led to cryptographic weaknesses
-discovered some 20 years later.)
+discovered some 20 years later{{Adrian2015}}.)
 
 Technologists and American industry pushed back. The IETF adopted the
 Danvers Doctrine, described in RFC 3365:
@@ -1178,10 +1270,10 @@ products. Some people have claimed that there were attempts to modify
 some IETF standards to make enough random bytes visible, to aid in
 exploiting the random number generator. A major vendor of networking
 gear, Juniper, did use DUAL_EC_DRBG in some of its products, but with
-different constants. Where did these come from? Were they from the NSA
-or some other government? Could their source tree have been hacked by
-an intelligence agency? There was a different hack of their code at
-around the same time. No one is talking.
+different constants{{Checkoway2016}}. Where did these come from? Were
+they from the NSA or some other government? Could their source tree
+have been hacked by an intelligence agency? There was a different hack
+of their code at around the same time{{Moore2015}}. No one is talking.
 
 The Snowden revelations also included data suggesting that the NSA had
 a worldwide eavesdropping network and a group that tried very
@@ -1236,9 +1328,9 @@ such as key lengths and modulus sizes age; a value that is acceptable
 today may not be 10 years hence. (We’ve already seen apparent problems
 from 1024-bit moduli specified in an RFC, an RFC that was not modified
 when technology improved enough that attacking encryption based on
-them had become feasible.) The IETF can do nothing about the code that
-vendors ship or that sites use, but it can alert the world that it
-thinks things have changed.
+them had become feasible.{{Adrian2015}}) The IETF can do nothing about
+the code that vendors ship or that sites use, but it can alert the
+world that it thinks things have changed.
 
 Cryptoagility is of increasing importance. In the next very few years,
 we will have so-called post-quantum algorithms. Both protocols and key
