@@ -346,22 +346,20 @@ period of time, what effect the community's actions had, where
 security has improved, how the threat surface has evolved, what areas
 haven't improved, and where the community might invest future efforts.
 
-This compendium of essays first brings us back to 2013 with an essay
-by Bruce Schneier, about how it was for him and others to report what
-was happening, and the mindset of those involved.  Next, Stephen
+Bruce Schneier begins this compendium of individual essays by bringing
+us back to 2013, recalling how it was for him and others to report
+what was happening, and the mindset of those involved.  Next, Stephen
 Farrell reviews the technical community's reactions, technical
 advances, and where threats remain.  Then Farzaneh Badii discusses the
 impact of those advances – or lack thereof – on human rights.  Finally
-Steve Bellovin...
+Steven M. Bellovin puts the Snowden revelations into an ever-evolving
+historical context of secrets and secret stealing that spans
+centuries, closing with some suggestions for IETF.
 
-Note that each essay reflects the views of the contributor of that
-work, and may not reflect the views of others.
-
-Although four people write here about their views, readers are invited
-to reflect for themselves about that time, the intervening time, and
-what we as a community can do to address security and privacy of
-citizens of the world.
-
+Readers are invited to reflect for themselves on what impact we as a
+community have had – or not had, and what positive contribution the
+technical community can and should make to address security and
+privacy of citizens of the world.
 
  -- Eliot Lear, Independent Submissions Editor
 
@@ -992,8 +990,8 @@ The modern era of conflict between individual’s desire for privacy and
 government desires to read traffic began around 1972. The grain
 harvest in the U.S.S.R. had failed; since relations between the Soviet
 Union and the United States were temporarily comparatively warm, the
-Soviet grain company—an arm of the Soviet government, of
-course—entered into negotiations with private American
+Soviet grain company— an arm of the Soviet government, of
+course— entered into negotiations with private American
 companies. Unknown to Americans at the time, Soviet intelligence was
 intercepting the phone calls of the American negotiating teams. In
 other words, private companies had to deal with state actors as a
@@ -1062,7 +1060,7 @@ all organizations, the NSA, the order was lifted on very narrow
 grounds: the inventors were not American, and had been discussing
 their work all over the world {{Landau1988}}.
 
- In the 1990s, though, everything changed.
+In the 1990s, though, everything changed.
 
 The Battle is Joined
 --------------------
@@ -1220,8 +1218,8 @@ software, but bugs and operational errors by end-user sites persist.
 
 
 ## Whither the IETF?
-Signal intelligence agencies—not just the NSA, but its peers around
-the globe; most major countries have their own—are not going to go
+Signal intelligence agencies, not just the NSA, but its peers around
+the globe- most major countries have their own—are not going to go
 away. The challenges that have beset the NSA are common to all such
 agencies, and their solutions are likely the same. The question is
 what should be done to protect individual privacy. A number of strong
