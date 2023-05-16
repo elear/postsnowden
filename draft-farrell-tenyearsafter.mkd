@@ -818,9 +818,6 @@ capabilities we can only surmise.
 Stephen Farrell\: IETF and Internet Technical community reaction
 =======
 
-Disclaimer (better elsewhere in document): the text below provides the author's
-perspective and of course is limited and likely omits important things.
-
 In 2013, the IETF and, more broadly, the Internet technical, security and
 privacy research communities, were surprised by the surveillance and attack
 efforts exposed by the Snowden revelations.  {{timeline}} While the
@@ -841,11 +838,11 @@ feather" {{BoF-session}} devoted to more detailed discussion of possible
 actions in terms of new working groups, protcols and best-current-practice
 (BCP) documents that could help improve matters.  This was followed in
 February/March 2014 by a joint IAB/W3C workshop on "strengthening the Internet
-against pervasive monitoring" {{STRINT}} in London attended by 150 engineers
-(still the only IAB workshop in my experience where we needed to setup a
-wait-list for people who wanted to attend after capacity for the venue was
-reached:-). The workshop report was eventually published as {{?RFC7687}} in
-2015, but in the meantime work proceeeded on a best-current-practice document
+against pervasive monitoring" {{STRINT}} held in London and attended by 150 engineers
+(still the only IAB workshop in my experience where we needed a
+wait-list for people after capacity for the venue was
+reached:-). The STRING workshop report was eventually published as {{?RFC7687}} in
+2015, but in the meantime work proceeeded on a Best Current Practice (BCP) document
 codifying that the IETF community considered that "pervasive monitoring is an
 attack" {{?RFC7258}} (aka BCP188). The IETF last-call discussion for that short
 document included more than 1000 emails - while there was broad agreement on
@@ -874,7 +871,8 @@ working group later.  The CURDLE working group was to an extent created to
 enable use of a set of new elliptic curves that had been documented by the IRTF
 crypto forum research group. {{CFRG}} That work in turn had been partly
 motivated by (perhaps ultimately unfounded) concerns about elliptic curves
-defined in NIST standards, following the dual-ec debacle {{dual-ec}} where a
+defined in NIST standards, following the DUAL_EC_DRBG debacle {{dual-ec}} 
+(described further below) where a
 NIST random number generator had been deliberately engineered to produce output
 that could be vulnerable to NSA attack.
 
@@ -899,7 +897,7 @@ Work on HTTP version 2 {{?RFC7540}} and QUIC {{?RFC9000}} further demonstrates
 the trend in the IETF towards always-encrypting protocols as the new norm, at
 least at and above the transport layer.
 
-Of course, not all these initiatives bore fruit, for example attempts to define
+Of course, not all such initiatives bore fruit, for example attempts to define
 a new MPLS encryption mechanism {{?I-D.farrelll-mpls-opportunistic-encrypt}}
 foundered due to a lack of interest and the existence of the already deployed
 IEEE MACSEC scheme. But there has been a fairly clear trend towards trying to
@@ -953,44 +951,49 @@ inevitably leads to worse security overall. The recurring nature of this kind
 of push-back is nicely illustrated by {{?RFC1984}}. That informational document
 was published in 1996 as an IETF response to an early iteration of the
 perennial "encryption is bad" argument. In 2015, the unmodified 1996 text was
-upgraded to a best-current-practice (BCP200) as the underlying arguments have
+upgraded to a Best Current Practice (BCP200) as the underlying arguments have
 not, and will not, change.
 
-Looking back on all the above from a 2023 vantage point, I think one can say
-that, as a community of Internet engineers, we got a lot right, but that today
-there's way more that needs to be done to better protect the security and
-privacy of people who use the Internet. In particular, we (the technical
-community) haven't done nearly as good a job at countering surveillance
-capitalism which has exploded in the last decade. In part, that's because many
-of the problems are outside of the scope of bodies such as the IETF, for
-example, intrusive back-end sharing of people's data for advertising purposes
-can't really be addressed via Internet protocols.  However, I also think it's
-likely the case that the real level of annoyance felt with respect to the
-Snowden revelations seems (in general) to not be felt nearly as much when it
-comes to the legal but privacy-invasive activities of major employers of
-Internet engineers. It's noteworthy that RFC7258 doesn't consider that bad
-actors are limited to governments and personally, I think many advertising
-industry schemes for collecting data are egregious examples of pervasive
-monitoring and hence ought also be considered an attack on the Internet that
-ought be mitigated where possible.  However, the Internet technical community
-clearly hasn't acted in that way over the last decade.
+Looking back on all the above from a 2023 vantage point, I think that, as a
+community of Internet engineers, we got a lot right, but that today there's way
+more that needs to be done to better protect the security and privacy of people
+who use the Internet. In particular, we (the technical community) haven't done
+nearly as good a job at countering surveillance capitalism which has exploded
+in the last decade. In part, that's because many of the problems are outside of
+the scope of bodies such as the IETF, for example, intrusive back-end sharing
+of people's data for advertising purposes can't really be mitigated via
+Internet protocols.
+
+However, I also think that the real annoyance felt with respect to the Snowden
+revelations is (in general) not felt nearly as much when it comes to the legal
+but hugely privacy-invasive activities of major employers of Internet
+engineers.
+
+It's noteworthy that RFC7258 doesn't consider that bad actors are limited to
+governments and personally, I think many advertising industry schemes for
+collecting data are egregious examples of pervasive monitoring and hence ought
+also be considered an attack on the Internet that ought be mitigated where
+possible.  However, the Internet technical community clearly hasn't acted in
+that way over the last decade.
 
 Perhaps that indicates that Internet engineers and the bodies in which they
 congregate need to place much more emphasis on standards for ethical behaviour
 than has been the case for the first half-century of the Internet.  And while
 it would be good to see the current leaders of Internet bodies work to make
-progress in that regard, at the time of writing, it seems more likely that
-Government regulators will be the ones to try force better behaviour. That of
+progress in that regard, at the time of writing, it (sadly) seems more likely that
+government regulators will be the ones to try force better behaviour. That of
 course comes with a significant risk of having regulations that stymie the kind
 of permissionless innovation that characterised many earlier Internet
 successes.
 
 So while we got a lot right in our reaction to Snowden's revelations,
 currently, we have a "worse" Internet.  Nonetheless, I do still hope to see a
-sea-change there though, as the importance of real Internet security and
-privacy for people becomes utterly obvious to all, even the most hard core
-capitalists and government signals intelligence agencies, but that's perhaps
-because I'm just an optimist:-)
+sea-change there, as the importance of real Internet security and privacy for
+people becomes utterly obvious to all, even the most hard core capitalists and
+government signals intelligence agencies.  That may seem naive, but I remain
+optimistic that as a fact-based community we (and eventually our employers)
+will recognise that the lesser risk is to honestly aim to provide the best
+security and privacy practically possible.
 
 Farzaneh Badii\: Did Snowden’s revelations help with protecting human rights on the Internet?
 ========
@@ -1574,10 +1577,16 @@ Acknowledgments
 ===============
 Susan Landau added many valuable comments to Steve Bellovin's essay.
 
+This document was created at the behest of Eliot Lear, who also 
+cat herded and did some editing.
+
 Security Considerations
 =======================
 
-Well...
+Each or any of the authors may have forgotten or omitted things
+or gotten things wrong. We're sorry if that's the case, but that's
+in the nature of a look-back such as this. Such flaws almost 
+certainly won't worsen security or privacy though.
 
 IANA Considerations
 ===================
