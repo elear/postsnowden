@@ -900,7 +900,7 @@ Of course, not all such initiatives bore fruit, for example attempts to define
 a new MPLS encryption mechanism {{?I-D.farrelll-mpls-opportunistic-encrypt}}
 foundered due to a lack of interest and the existence of the already deployed
 IEEE MACSEC scheme. But there has been a fairly clear trend towards trying to
-remove cleartext from the Internet as a means to provide improved privacy
+remove cleartext from the Internet as a precursor to provide improved privacy
 when considering network observers as attackers.
 
 The IETF of course, forms only one part of the broader Internet technical
