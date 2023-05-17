@@ -447,7 +447,7 @@ informative:
 
 This memo contains the thoughts and recountings of events that
 transpired during and after the release of information about the NSA
-by Edward Snowden.  There are four perspectives: that of of someone
+by Edward Snowden.  There are four perspectives: that of someone
 who was involved with sifting through the information to responsibly
 inform the public, a security area director of the IETF, a human
 rights expert, and of a computer science and law expert.  The purpose
@@ -841,7 +841,7 @@ February/March 2014 by a joint IAB/W3C workshop on "strengthening the Internet
 against pervasive monitoring" {{STRINT}} held in London and attended by 150 engineers
 (still the only IAB workshop in my experience where we needed a
 wait-list for people after capacity for the venue was
-reached:-). The STRING workshop report was eventually published as {{?RFC7687}} in
+reached:-). The STRINT workshop report was eventually published as {{?RFC7687}} in
 2015, but in the meantime work proceeeded on a Best Current Practice (BCP) document
 codifying that the IETF community considered that "pervasive monitoring is an
 attack" {{?RFC7258}} (aka BCP188). The IETF last-call discussion for that short
