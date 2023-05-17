@@ -446,14 +446,14 @@ informative:
 --- abstract
 
 This memo contains the thoughts and recountings of events that
-transpired during and after the release of information about the
-NSA by Edward Snowden.  There are three perspectives: that of
-a security area director of the IETF, a human rights expert, and
-of someone who was involved with sifting through the information
-to responsibly inform the public.  The purpose of this memo is
-to provide some historical perspective, while at the same time
-offering a view as to what security challenges the technical
-community should consider.
+transpired during and after the release of information about the NSA
+by Edward Snowden.  There are four perspectives: that of of someone
+who was involved with sifting through the information to responsibly
+inform the public, a security area director of the IETF, a human
+rights expert, and of a computer science and law expert.  The purpose
+of this memo is to provide some historical perspective, while at the
+same time offering a view as to what security and privacy challenges
+the technical community should consider.
 
 --- middle
 
@@ -847,16 +847,15 @@ codifying that the IETF community considered that "pervasive monitoring is an
 attack" {{?RFC7258}} (aka BCP188). The IETF last-call discussion for that short
 document included more than 1000 emails - while there was broad agreement on
 the overall message, a number of IETF participants considered enshrining that
-message in the RFC series and IETF processes was controversial, but in any case
+message in the RFC series and IETF processes was controversial. In any case
 the BCP was published in May 2014. The key statement on which rough consensus
 was reached is in the abstract of RFC7258 and says "Pervasive monitoring is a
 technical attack that should be mitigated in the design of IETF protocols,
 where possible." That document has since been referenced {{refs-to-7258}} by
 many IETF working groups and RFCs as justifying additional work on security and
-privacy. Throughout this period and beyond, the repercussions of the Snowden
-revelations was also a major and ongoing agenda item for both of the IETF's
-main technical management bodies - the IAB and the IESG (on which the author of
-this section served at the time).
+privacy. Throughout that period and beyond, the repercussions of the Snowden
+revelations remained a major and ongoing agenda item for both of the IETF's
+main technical management bodies - the IAB and the IESG (on which I served at the time).
 
 So far, I've really only described the processes with which the IETF dealt with
 the attacks, but there was of course also much technical work started by IETF
@@ -886,7 +885,7 @@ today using the so-called encrypted client hello (ECH) {{?I-D.ietf-tls-esni}}
 mechanism to remove one of the last privacy leaks present in current TLS.
 
 Work on ECH was enabled by significant developments to encrypt DNS traffic,
-using DoT {{?RFC7858}} or DoH {{?RFC8484}} which also started as a result of
+using DNS over TCP (DoT) {{?RFC7858}} or DNS over HTTP (DoH) {{?RFC8484}} which also started as a result of
 the Snowden relevations. Prior to that, privacy hadn't really been considered
 when it came to DNS data or (more importantly) the act of accessing DNS data.
 The trend towards encrypting DNS traffic represents a significant change for
@@ -901,7 +900,7 @@ Of course, not all such initiatives bore fruit, for example attempts to define
 a new MPLS encryption mechanism {{?I-D.farrelll-mpls-opportunistic-encrypt}}
 foundered due to a lack of interest and the existence of the already deployed
 IEEE MACSEC scheme. But there has been a fairly clear trend towards trying to
-remove cleartext from the Internet as a precursor to providing better privacy
+remove cleartext from the Internet as a means to provide improved privacy
 when considering network observers as attackers.
 
 The IETF of course, forms only one part of the broader Internet technical
@@ -921,7 +920,7 @@ directly enabling some of the attacks documented in the Snowden documents.
 Significant effort by major mail services and MTA software developers since
 then have resulted in more than 90% of email being encrypted between mail
 servers and various IETF protocols have been defined in order to improve that
-situation, e.g., MTA-STS. {{?RFC8461}}
+situation, e.g., SMTP MTA Strict Transport Security (MTA-STS). {{?RFC8461}}
 
 Lastly, MAC addressees have historically been long-term fixed values visble to
 local networks (and beyond), which enabled some tracking attacks that were
@@ -960,7 +959,7 @@ more that needs to be done to better protect the security and privacy of people
 who use the Internet. In particular, we (the technical community) haven't done
 nearly as good a job at countering surveillance capitalism which has exploded
 in the last decade. In part, that's because many of the problems are outside of
-the scope of bodies such as the IETF, for example, intrusive back-end sharing
+the scope of bodies such as the IETF. For example, intrusive back-end sharing
 of people's data for advertising purposes can't really be mitigated via
 Internet protocols.
 
@@ -970,7 +969,7 @@ but hugely privacy-invasive activities of major employers of Internet
 engineers.
 
 It's noteworthy that RFC7258 doesn't consider that bad actors are limited to
-governments and personally, I think many advertising industry schemes for
+governments; and personally, I think many advertising industry schemes for
 collecting data are egregious examples of pervasive monitoring and hence ought
 also be considered an attack on the Internet that ought be mitigated where
 possible.  However, the Internet technical community clearly hasn't acted in
@@ -980,7 +979,7 @@ Perhaps that indicates that Internet engineers and the bodies in which they
 congregate need to place much more emphasis on standards for ethical behaviour
 than has been the case for the first half-century of the Internet.  And while
 it would be good to see the current leaders of Internet bodies work to make
-progress in that regard, at the time of writing, it (sadly) seems more likely that
+progress in that regard, at the time of writing, it sadly seems more likely that
 government regulators will be the ones to try force better behaviour. That of
 course comes with a significant risk of having regulations that stymie the kind
 of permissionless innovation that characterised many earlier Internet
