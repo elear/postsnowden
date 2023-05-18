@@ -502,7 +502,7 @@ NSA surveillance based on the documents provided by Edward
 Snowden. But I had a more personal involvement as well.
 
 I wrote the essay below in September 2013. The _New Yorker_ agreed to
-publish it, but the _Guardian_ asked me not to. It was legitimately
+publish it, but the _Guardian_ asked me not to. It was
 scared of UK law enforcement, and worried that this essay would
 reflect badly on it. And given that the UK police would raid its
 offices in July 2014, it had legitimate cause to be worried.
@@ -522,12 +522,13 @@ a couple of months, and had a pile of more technical documents that he
 wanted help interpreting. According to Greenwald, Snowden also thought
 that bringing me down was a good idea.
 
-It made sense. I have been writing about cryptography, security, and
-privacy for decades. I could decipher some of the technical language
-that Greenwald had difficulty with, and understand the context and
-importance of various document. And I have long been publicly critical
-of the NSA’s eavesdropping capabilities. My knowledge and expertise
-could help figure out which stories needed to be reported.
+It made sense. I didn't know either of them, but I have been writing
+about cryptography, security, and privacy for decades. I could
+decipher some of the technical language that Greenwald had difficulty
+with, and understand the context and importance of various
+document. And I have long been publicly critical of the NSA’s
+eavesdropping capabilities. My knowledge and expertise could help
+figure out which stories needed to be reported.
 
 I thought about it a lot before agreeing. This was before David
 Miranda, Greenwald’s partner, was detained at Heathrow airport by the
@@ -613,7 +614,8 @@ still dealing with the fallout from Miranda’s detention. Two other
 journalists, one from the Nation and the other from the _Hindu_, were
 also in town working with him. A lot of my week involved Greenwald
 rushing into my hotel room, giving me a thumb drive of new stuff to
-look through, and rushing out again.
+look through, and rushing out again.  I did get to "meet" Snowden over
+secure chat.
 
 A technician from the _Guardian_ got a search capability working while I
 was there, and I spent some time with it. Question: when you’re given
@@ -1173,8 +1175,10 @@ widespread implementation of human rights enabling Internet protocols.
 
 Steven M. Bellovin\: Governments and Cryptography: The Crypto Wars
 =================
+
 Historical Background
 ----------------------
+
 It’s not a secret: many governments in the world don’t like it when
 people encrypt their traffic. More precisely, they like strong
 cryptography for themselves but not for others, whether those others
@@ -1329,7 +1333,7 @@ Whitfield Diffie and Martin Hellman, at Stanford University, wondered
 about the 56-bit keys. In 1979, they published a paper demonstrating
 that the U.S. government, but few others, could afford to build a
 brute-force cracking machine, one that could try all 2^56 possible
-keys to crack a message. NSA falsely denied tampering with the key
+keys to crack a message. NSA denied tampering with the key
 length; a Senate investigating committee didn’t answer that question
 but did say, correctly, that there no hidden weaknesses in the design
 of DES except for the shortened key length.
