@@ -837,27 +837,28 @@ proposals for work on these topics. At the November 2013 IETF meeting, there
 was a lively and very well attended plenary session {{plenary-video}} on
 "hardening the Internet" against such attacks, followed by a "birds of a
 feather" {{BoF-session}} devoted to more detailed discussion of possible
-actions in terms of new working groups, protcols and best-current-practice
+actions in terms of new working groups, protocols and best-current-practice
 (BCP) documents that could help improve matters.  This was followed in
 February/March 2014 by a joint IAB/W3C workshop on "strengthening the Internet
-against pervasive monitoring" {{STRINT}} held in London and attended by 150 engineers
-(still the only IAB workshop in my experience where we needed a
-wait-list for people after capacity for the venue was
-reached:-). The STRINT workshop report was eventually published as {{?RFC7687}} in
-2015, but in the meantime work proceeeded on a Best Current Practice (BCP) document
-codifying that the IETF community considered that "pervasive monitoring is an
-attack" {{?RFC7258}} (aka BCP188). The IETF last-call discussion for that short
+against pervasive monitoring" {{STRINT}} held in London and attended by 150
+engineers (still the only IAB workshop in my experience where we needed a
+wait-list for people after capacity for the venue was reached!). The STRINT
+workshop report was eventually published as {{?RFC7687}} in 2015, but in the
+meantime work proceeded on a Best Current Practice (BCP) document codifying
+that the IETF community considered that "pervasive monitoring is an attack"
+{{?RFC7258}} (aka BCP188). The IETF last-call discussion for that short
 document included more than 1000 emails - while there was broad agreement on
 the overall message, a number of IETF participants considered enshrining that
-message in the RFC series and IETF processes was controversial. In any case
-the BCP was published in May 2014. The key statement on which rough consensus
-was reached is in the abstract of RFC7258 and says "Pervasive monitoring is a
+message in the RFC series and IETF processes was controversial. In any case the
+BCP was published in May 2014. The key statement on which rough consensus was
+reached is in the abstract of RFC7258 and says "Pervasive monitoring is a
 technical attack that should be mitigated in the design of IETF protocols,
 where possible." That document has since been referenced {{refs-to-7258}} by
 many IETF working groups and RFCs as justifying additional work on security and
 privacy. Throughout that period and beyond, the repercussions of the Snowden
 revelations remained a major and ongoing agenda item for both of the IETF's
-main technical management bodies - the IAB and the IESG (on which I served at the time).
+main technical management bodies - the IAB and the IESG (on which I served at
+the time).
 
 So far, I've really only described the processes with which the IETF dealt with
 the attacks, but there was of course also much technical work started by IETF
@@ -866,7 +867,7 @@ participants that was at least partly motivated by the Snowden revelations.
 In November 2013 a working group was established to document better practices
 for using TLS in applications {{UTA}} so that deployments would be less at risk
 in the face of some of the attacks related to stripping TLS or having
-appliations mis-use TLS APIs or parameters.  Similar work was done to update
+applications mis-use TLS APIs or parameters.  Similar work was done to update
 recommendations for use of cryptography in other protocols in the {{CURDLE}}
 working group later.  The CURDLE working group was to an extent created to
 enable use of a set of new elliptic curves that had been documented by the IRTF
@@ -882,13 +883,13 @@ concerns that TLSv1.2 and earlier version implementations had been shown to be
 vulnerable to a range of attacks over the years. The work to develop TLSv1.3
 {{?RFC8446}} also however aimed to encrypt more of the handshake so as to
 expose less information to network observers - a fairly direct result of the
-Snowden relevations.  Work to further improve TLS in this respect continues
+Snowden revelations.  Work to further improve TLS in this respect continues
 today using the so-called encrypted client hello (ECH) {{?I-D.ietf-tls-esni}}
 mechanism to remove one of the last privacy leaks present in current TLS.
 
 Work on ECH was enabled by significant developments to encrypt DNS traffic,
 using DNS over TCP (DoT) {{?RFC7858}} or DNS over HTTP (DoH) {{?RFC8484}} which also started as a result of
-the Snowden relevations. Prior to that, privacy hadn't really been considered
+the Snowden revelations. Prior to that, privacy hadn't really been considered
 when it came to DNS data or (more importantly) the act of accessing DNS data.
 The trend towards encrypting DNS traffic represents a significant change for
 the Internet, both in terms of reducing cleartext, but also in terms of moving
@@ -912,10 +913,10 @@ standardise better security and privacy mechanisms developed elsewhere.
 
 In 2013, the web was largely unencrypted despite HTTPS being relatively
 usable and that was partly due to problems using the WebPKI at scale. The
-LetsEncrypt {{LE}} initiatve was established in 2015 to try move the web
+letsencrypt {{LE}} initiative was established in 2015 to try move the web
 towards being fully encryted and has been extremely successful in helping
 achieve that goal.  Subsequently, the automation protocols developed for
-LetsEncrypt were standardised in the IETF's ACME {{ACME}} working group.
+letsencrypt were standardised in the IETF's ACME {{ACME}} working group.
 
 In 2013, most email transport between mail servers was cleartext,
 directly enabling some of the attacks documented in the Snowden documents.
