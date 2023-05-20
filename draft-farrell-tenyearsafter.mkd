@@ -1192,7 +1192,7 @@ example, Julius Caesar is said to have encrypted messages by shifting
 letters in the alphabet by 3 {{Kahn1996}}. In modern parlance, 3 was
 the key, and each letter was encrypted with
 
-> C[i] = (P[i] + 3) mod 23
+> C\[i\] = (P\[i\] + 3) mod 23
 
 (In his day, J, U, and W did not exist in the Latin alphabet.) Known
 Arabic writings on cryptanalysis go back to at least the 8th century;
