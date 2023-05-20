@@ -20,16 +20,19 @@ author:
  -
     ins: F. Badii
     name: Farzaneh Badii
+    org: Digital Medusa
     email: farzaneh.badii@gmail.com
  -
     ins: B. Schneier
     name: Bruce Schneier
     org: Harvard University
+    country: USA
     email: schneier@schneier.com
  -
     ins: S. M. Bellovin
     name: Steven M. Bellovin
     org: Columbia University
+    country: USA
     email: smb@cs.columbia.edu
 
 normative:
