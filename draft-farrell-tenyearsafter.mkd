@@ -913,10 +913,10 @@ standardise better security and privacy mechanisms developed elsewhere.
 
 In 2013, the web was largely unencrypted despite HTTPS being relatively
 usable and that was partly due to problems using the WebPKI at scale. The
-letsencrypt {{LE}} initiative was established in 2015 to try move the web
+Let's Encrypt {{LE}} initiative was established in 2015 to try move the web
 towards being fully encryted and has been extremely successful in helping
 achieve that goal.  Subsequently, the automation protocols developed for
-letsencrypt were standardised in the IETF's ACME {{ACME}} working group.
+Let's Encrypt were standardised in the IETF's ACME {{ACME}} working group.
 
 In 2013, most email transport between mail servers was cleartext,
 directly enabling some of the attacks documented in the Snowden documents.
@@ -1334,10 +1334,9 @@ Whitfield Diffie and Martin Hellman, at Stanford University, wondered
 about the 56-bit keys. In 1979, they published a paper demonstrating
 that the U.S. government, but few others, could afford to build a
 brute-force cracking machine, one that could try all 2^56 possible
-keys to crack a message. NSA denied tampering with the key
-length; a Senate investigating committee didn’t answer that question
-but did say, correctly, that there no hidden weaknesses in the design
-of DES except for the shortened key length.
+keys to crack a message. NSA denied tampering with the design; a
+Senate investigating committee found that that was correct, but did
+not discuss the shortened key length issue.
 
 This, however, was not Diffie and Hellman’s greatest contribution to
 cryptology. A few years earlier, they published a paper inventing what
@@ -1419,7 +1418,7 @@ institution. This hybrid mode led to cryptographic weaknesses
 discovered some 20 years later{{Adrian2015}}.)
 
 Technologists and American industry pushed back. The IETF adopted the
-Danvers Doctrine, described in RFC 3365:
+Danvers Doctrine, described in {{?RFC3365}}:
 
 > At the 32nd IETF held in Danvers, Massachusetts during April of 1995
 > the IESG asked the plenary for a consensus on the strength of security
@@ -1469,7 +1468,7 @@ cryptography, but Shumow and Ferguson showed that if certain constants
 in DUAL_EC_DRBG were chosen in a particular way with a
 known-but-hidden other number, whoever knew that number could predict
 all future random numbers from a system given a few sample bytes to
-start from {{Kostyuk2022}}. These bytes could come from
+start from {{Kostyuk2022}}. These sample bytes could come from
 known keys, nonces, or anything else. Where did the constants in
 DUAL_EC_DRBG come from and how were they chosen or generated? No one
 who knows is talking. But although cryptographers and security
@@ -1508,7 +1507,7 @@ Casablanca: “I’m shocked, shocked to find that gambling is going on in
 here.” The immediate and continuing reaction was to deploy more
 encryption. The standards have long existed; what was missing was
 adoption. One barrier was the difficulty and expense of getting
-certificates to use with TLS; that void was filled by letsencrypt.org,
+certificates to use with TLS; that void was filled by Let's Encrypt{{LE}},
 which made free certificates easy to get online. Today, most HTTP
 traffic is encrypted, so much so that Google’s search engine
 down-ranks sites that do not use it. Major email providers uniformly
