@@ -690,7 +690,7 @@ because they’re interesting.
 
 The NSA got incredibly lucky; this could have ended with a massive
 public dump like Chelsea Manning’s State Department cables. I suppose
-it still could. Despite that, I can imagine how this feels to the NSA
+it still could. Despite that, I can imagine how this feels to the NSA.
 It’s used to keeping this stuff behind multiple levels of security:
 gates with alarms, armed guards, safe doors, and military-grade
 cryptography. It’s not supposed to be on a bunch of thumb drives in
