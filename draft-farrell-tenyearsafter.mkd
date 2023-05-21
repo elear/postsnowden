@@ -104,7 +104,7 @@ informative:
             -
                 name: Eric Rescorla
             -
-                name: Seth Shoen
+                name: Seth Schoen
             -
                 name: Brad Warren
         date: 2019
@@ -917,7 +917,7 @@ standardise better security and privacy mechanisms developed elsewhere.
 In 2013, the web was largely unencrypted despite HTTPS being relatively
 usable and that was partly due to problems using the WebPKI at scale. The
 Let's Encrypt {{LE}} initiative was established in 2015 to try move the web
-towards being fully encryted and has been extremely successful in helping
+towards being fully encrypted and has been extremely successful in helping
 achieve that goal.  Subsequently, the automation protocols developed for
 Let's Encrypt were standardised in the IETF's ACME {{ACME}} working group.
 
