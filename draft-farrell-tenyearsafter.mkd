@@ -463,16 +463,16 @@ the technical community should consider.
 Introduction
 ============
 
-On June 6th, 2013, an article appeared in _The Guardian_
-{{guard2013}} that was the beginning of a series of what have come to
-be known as revelations about the activities of the United States
-National Security Agency (NSA).  These activities included, amongst
-others, secret court orders, secret agreements for the receipt of
-so-called "meta-information" that includes source, destination, and
+On June 6th, 2013, an article appeared in _The Guardian_ {{guard2013}}
+that was the beginning of a series of what have come to be known as
+the Snowden Revelations, describing certain activities of the United
+States National Security Agency (NSA).  These activities included,
+amongst others, secret court orders, secret agreements for the receipt
+of so-called "meta-information" that includes source, destination, and
 timing of communications, tapping of communications lines, and other
 activities.  The breathtaking scope of the operations shocked the
-Internet technical community, and led to a sea change within the
-IETF, IAB, and many parts of the private sector.
+Internet technical community, and led to a sea change within the IETF,
+IAB, and many parts of the private sector.
 
 Now that some years have past, it seems appropriate to reflect on that
 period of time, what effect the community's actions had, where
@@ -897,7 +897,7 @@ when it came to DNS data or (more importantly) the act of accessing DNS data.
 The trend towards encrypting DNS traffic represents a significant change for
 the Internet, both in terms of reducing cleartext, but also in terms of moving
 points-of-control. The latter aspect was, and remains, controversial, but the
-IETF did it's job of defining new protocols that can enable better DNS privacy.
+IETF did its job of defining new protocols that can enable better DNS privacy.
 Work on HTTP version 2 {{?RFC7540}} and QUIC {{?RFC9000}} further demonstrates
 the trend in the IETF towards always-encrypting protocols as the new norm, at
 least at and above the transport layer.
@@ -1092,17 +1092,17 @@ with expediting the resolution of some of the “technical” hesitations
 that had an effect on fixing Internet protocols that enabled
 protection of human rights.
 
-Unfortunately, Snowden revelations have not yet helped us meaningfully
-with adopting a human rights approach. We can’t agree on prioritizing
-human rights in our Internet communities for a host of reasons. This
-could be due to: 1) human rights are sometimes in conflict with each
-other 2) it is simply not possible to mitigate the human right
-violation through the Internet protocol 3) it is not obvious for the
-engineers before the fact how the Internet protocol contributes to
-enabling protection of human rights and how they can fix the problem
-4) the protocol is already there but market, law and a host of other
-societal and political issues do not allow for widespread
-implementation.
+Unfortunately, the Snowden revelations have not yet helped us
+meaningfully with adopting a human rights approach. We can’t agree on
+prioritizing human rights in our Internet communities for a host of
+reasons. This could be due to: 1) human rights are sometimes in
+conflict with each other 2) it is simply not possible to mitigate the
+human right violation through the Internet protocol 3) it is not
+obvious for the engineers before the fact how the Internet protocol
+contributes to enabling protection of human rights and how they can
+fix the problem 4) the protocol is already there but market, law and a
+host of other societal and political issues do not allow for
+widespread implementation.
 
 IETF did not purposefully take a long time to adopt protocols that
 enabled human rights. There were technical and political issues that
@@ -1146,8 +1146,8 @@ resort to tools that impact that very concept. For example, some
 believe via imposing sanctions on critical properties of the Internet,
 we can punish the perpetrators of a war. The Regional Internet
 Registries that are in charge of registration of IP addresses have
-shown resilience to these requests. However, some tech-companies (-
-for example Cogent {{Roth2022}}) have not shied away from not serving
+shown resilience to these requests. However, some tech-companies, 
+for example Cogent {{Roth2022}}), have not shied away from not serving
 sanctioned countries, even if it is over-compliance and could cause
 disconnecting ordinary people.
 
