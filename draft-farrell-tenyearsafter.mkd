@@ -899,7 +899,7 @@ today using the so-called encrypted client hello (ECH) {{?I-D.ietf-tls-esni}}
 mechanism to remove one of the last privacy leaks present in current TLS.
 
 Work on ECH was enabled by significant developments to encrypt DNS traffic,
-using DNS over TLS (DoT) {{?RFC7858}} or DNS over HTTP (DoH) {{?RFC8484}} which also started as a result of
+using DNS over TLS (DoT) {{?RFC7858}} or DNS over HTTPS (DoH) {{?RFC8484}} which also started as a result of
 the Snowden revelations. Prior to that, privacy hadn't really been considered
 when it came to DNS data or (more importantly) the act of accessing DNS data.
 The trend towards encrypting DNS traffic represents a significant change for
