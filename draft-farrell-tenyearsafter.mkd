@@ -1325,7 +1325,7 @@ underscored the need for strong cryptography to protect American
 civilian traffic—but the SIGINT people were unhappy at the thought of
 more encryption that they couldn’t break.
 
-Meanwhile, the Pentagon was concerned about protecting its
+Meanwhile, the U.S. was concerned about protecting 
 unclassified data {{Landau2014}}. In 1973 and again in 1974, the
 National Bureau of Standards (NBS) put out a call for a strong, modern
 encryption algorithm. IBM submitted Lucifer, an internally developed
