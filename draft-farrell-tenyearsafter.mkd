@@ -57,7 +57,7 @@ informative:
             organization: IETF
         date: 2013
     CFRG:
-        title: IRTF Crypto Forum (CFRG) 
+        title: IRTF Crypto Forum (CFRG)
         target: https://datatracker.ietf.org/rg/cfrg/
         author:
             organization: IETF
@@ -74,7 +74,7 @@ informative:
         author:
             -
                 name: Daniel Bernstein
-            - 
+            -
                 name: Tanja Lange
             -
                 name: Ruben Niederhagen
@@ -84,7 +84,7 @@ informative:
         title: Let's Encrypt - an automated certificate authority to encrypt the entire web
         author:
             -
-                name: Josh Aas 
+                name: Josh Aas
             -
                 name: Richard Barnes
             -
@@ -108,7 +108,7 @@ informative:
             -
                 name: Brad Warren
         date: 2019
-    MADINAS: 
+    MADINAS:
         title: MADINAS WG
         target: https://datatracker.ietf.org/wg/madinas/)
         author:
@@ -445,6 +445,14 @@ informative:
           "The Verge":
        target: https://www.theverge.com/2022/3/5/22962822/internet-backbone-provider-cogent-shuts-off-service-russia
        date: March 5, 2022
+    zubhoff2019:
+       title: The age of surveillance capitalism, The fight for a human future at the new frontier of power
+       author:
+          ins: S. Zuboff
+          name: Shoshana Zuboff
+       date: 2019
+       seriesinfo:
+           "Profile Books, ISBN 9781781256855"
 
 --- abstract
 
@@ -891,7 +899,7 @@ today using the so-called encrypted client hello (ECH) {{?I-D.ietf-tls-esni}}
 mechanism to remove one of the last privacy leaks present in current TLS.
 
 Work on ECH was enabled by significant developments to encrypt DNS traffic,
-using DNS over TCP (DoT) {{?RFC7858}} or DNS over HTTP (DoH) {{?RFC8484}} which also started as a result of
+using DNS over TLS (DoT) {{?RFC7858}} or DNS over HTTP (DoH) {{?RFC8484}} which also started as a result of
 the Snowden revelations. Prior to that, privacy hadn't really been considered
 when it came to DNS data or (more importantly) the act of accessing DNS data.
 The trend towards encrypting DNS traffic represents a significant change for
@@ -930,11 +938,15 @@ situation, e.g., SMTP MTA Strict Transport Security (MTA-STS). {{?RFC8461}}
 
 Lastly, MAC addressees have historically been long-term fixed values visble to
 local networks (and beyond), which enabled some tracking attacks that were
-documented in the Snowden documents. {{Toronto}} The IEEE 802
+documented in the Snowden documents. {{Toronto}} 
+Implementers/vendors and the IEEE 802
 standards group recognised this weakness and started work on MAC address
 randomisation that in turn lead to the IETF's {{MADINAS}} working group that
 aims to ensure randomised MAC addresses can be used on the Internet without
 causing unintentional harm.
+There is also a history of IETF work on deprecating MAC-address based IPv6 interface identifiers,
+advocating pseudo-random identifiers and temporary addresses, some of
+which pre-dates Snowden. {{?RFC7217}} {{?RFC8064}} {{?RFC8981}}
 
 In summary, the significantly large volume of technical work pursued in the
 IETF and elsewhere as a result of the Snowden revelations has focussed on two
@@ -963,7 +975,7 @@ Looking back on all the above from a 2023 vantage point, I think that, as a
 community of Internet engineers, we got a lot right, but that today there's way
 more that needs to be done to better protect the security and privacy of people
 who use the Internet. In particular, we (the technical community) haven't done
-nearly as good a job at countering surveillance capitalism which has exploded
+nearly as good a job at countering surveillance capitalism {{zubhoff2019}} which has exploded
 in the last decade. In part, that's because many of the problems are outside of
 the scope of bodies such as the IETF. For example, intrusive back-end sharing
 of people's data for advertising purposes can't really be mitigated via
