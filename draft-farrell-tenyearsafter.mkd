@@ -1152,16 +1152,30 @@ censorship and bring encryption to DNS queries. The arguments against
 implementation of DoH include protection of children online and lack
 of law enforcement access to data.
 
+
+We must acknowledge that sometimes the technical solutions that we use
+that protect one right (for example encryption to protect the right to
+privacy or prevent surveillance) could potentially affect technical
+and policy solutions that try to protect other human rights (for
+example encryption could prevent financial institutions from
+monitoring employees network activities to detect fraudulent
+behavior). Acknowledging and identifying these conflicts can help us
+come up with alternative techniques that could protect human rights
+while not hampering other technical solutions such as
+encryption. Where such alternative techniques are not possible,
+acknowledging the shortcoming could clarify and bring to light the
+trade-offs that we have accepted in our Internet system.
+
 Ironically, we advocate for connectivity and believe expressing
 oneself on the Internet is a human right, but when a war erupts, we
 resort to tools that impact that very concept. For example, some
 believe via imposing sanctions on critical properties of the Internet,
 we can punish the perpetrators of a war. The Regional Internet
 Registries that are in charge of registration of IP addresses have
-shown resilience to these requests. However, some tech-companies, 
-for example Cogent {{Roth2022}}), have not shied away from not serving
-sanctioned countries, even if it is over-compliance and could cause
-disconnecting ordinary people.
+shown resilience to these requests.  However, some tech-companies, for
+example Cogent {{Roth2022}}, decided not to serve sanctioned countries
+and over-comply with sanctions. Over-compliance with sanctions could
+hamper ordinary people's access to the Internet.
 
 Perhaps we can solve some of these problems by undertaking a thorough
 impact assessment and contextualization to reveal how and why Internet
