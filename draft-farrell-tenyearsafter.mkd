@@ -546,7 +546,7 @@ Miranda, Greenwald’s partner, was detained at Heathrow airport by the
 UK authorities; but even without that, I knew there was a risk. I fly
 a lot—a quarter of a million miles per year—and being put on a TSA
 list, or being detained at the US border and having my electronics
-seized, would be a major problem. So would the FBI breaking into my
+confiscated, would be a major problem. So would the FBI breaking into my
 home and seizing my personal electronics. But in the end, that made me
 more determined to do it.
 
@@ -625,8 +625,7 @@ still dealing with the fallout from Miranda’s detention. Two other
 journalists, one from the Nation and the other from the _Hindu_, were
 also in town working with him. A lot of my week involved Greenwald
 rushing into my hotel room, giving me a thumb drive of new stuff to
-look through, and rushing out again.  I did get to "meet" Snowden over
-secure chat.
+look through, and rushing out again.
 
 A technician from the _Guardian_ got a search capability working while I
 was there, and I spent some time with it. Question: when you’re given
@@ -785,8 +784,8 @@ framed print of the censor’s message on my wall.
 
 Perhaps the most surreal document disclosures were when artists
 started writing fiction based on the documents. This was in 2016, when
-the _Intercept_ finally built a secure room in New York to house the
-documents. By then, the documents were years out of date, and now
+Laura Poitras built a secure room in New York to house the
+documents. By then, the documents were years out of date.  And now
 they’re over a decade out of date. (They were leaked in 2013, but most
 of them were from 2012 or before.)
 
@@ -814,7 +813,7 @@ authorities haven’t been restricted in any way. And surveillance
 capitalism is still the business model of the Internet.
 
 And Edward Snowden? We were in contact for a while on Signal. I
-visited him once in Moscow, in 2016. And I had him do an annual guest
+visited him once in Moscow, in 2016. And I had him do an guest
 lecture to my class at Harvard for a few years, remotely by
 Jitsi. Afterwards, I would hold a session where I promised to answer
 every question he would evade or not answer, explain every response he
@@ -1550,7 +1549,7 @@ also capable of stealing the information on them; indeed, that is a
 frequent accompanying activity, since the threat of disclosure is
 another incentive to pay for those sites that do have good enough
 backups. Major vendors have put a lot of effort into securing their
-software, but bugs and operational errors by end-user sites persist.
+software, bugs and operational errors by end-user sites persist.
 
 
 ## Whither the IETF?
