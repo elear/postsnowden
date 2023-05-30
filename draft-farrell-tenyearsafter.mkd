@@ -341,13 +341,26 @@ informative:
           "Proceedings of the 22th ACM Conference on Computer and Communications Security (CCS)":
        target: https://weakdh.org/imperfect-forward-secrecy.pdf
        date: 2015
+    BellovinRescorla2006:
+    	title: Deploying a New Hash Algorithm
+	author:
+	   -
+	   	ins: S.M. Bellovin
+		Name: Steven M. Bellovin
+	   -
+	   	ins: E.K. Rescorla
+		Name: Eric K. rescorla
+	date: 2006
+	target: https://www.cs.columbia.edu/~smb/papers/new-hash.pdf
+	seriesinfo:
+		"Proceedings of NDSS '06"
     Blaze1994:
-       title: Did Britain Sell Enigmas Postwar?
+       title: Protocol Failures in the Escrowed Encryption Standard
        author:
           ins: M. Blaze
           name: Matt Blaze
        seriesinfo:
-          "Dr. Enigma (blog)":
+          "Proceedings of Second ACM Conference on Computer and Communications Security"
        date: 1994
        target: http://www.mattblaze.org/papers/eesproto.pdf
     Checkoway2016:
@@ -1530,7 +1543,7 @@ is encrypted or after it is decrypted, and don’t worry about the
 strength of the algorithms.
 
 The privacy community, worldwide, was appalled, though perhaps they
-shouldn’t have been. It calls to mind Claude Rains famous line from
+shouldn’t have been. It calls to mind Claude Rains' famous line from
 Casablanca: “I’m shocked, shocked to find that gambling is going on in
 here.” The immediate and continuing reaction was to deploy more
 encryption. The standards have long existed; what was missing was
@@ -1540,7 +1553,10 @@ which made free certificates easy to get online. Today, most HTTP
 traffic is encrypted, so much so that Google’s search engine
 down-ranks sites that do not use it. Major email providers uniformly
 use TLS to protect all traffic. WiFi, though a local area issue, now
-uses much stronger encryption.
+uses much stronger encryption. (It's important to remember that
+security and insecurity have economic components. Security doesn't have
+to be perfect to be very useful, if it raises the attackers' costs
+by enough.)
 
 The news on the software side is less good. Not a day goes by when one
 does not read of organizations being hit by ransomware. It goes
@@ -1581,7 +1597,8 @@ lengths will need to change, perhaps drastically. Is the IETF ready?
 What will happen to, say, DNSSEC if key lengths become drastically
 longer? Backwards compatibility will remain important, but that, of
 course, opens the door to other attacks. We’ve long thought about
-them; we need to be sure that our mechanisms work.
+them; we need to be sure that our mechanisms work---we've
+been surprised in the past.{{BellovinRescorla2006}}
 
 We also need to worry more about metadata. General Michael Hayden,
 former director of both the NSA and the CIA, once remarked, “We kill
@@ -1594,7 +1611,9 @@ attempts to hide metadata involving trusting a different party; that
 party may turn out to be untrustworthy or it may itself become a
 target of attack. As another prominent IETFer has remarked,
 “Insecurity is like entropy; you can’t destroy it but you can move it
-around.”
+around.” The IETF has done a lot; it needs to do more. And remember
+that the risk here is not just governments acting directly, it's also
+private companies that collect the data and sell it to all comers.
 
 Finally, the IETF must remember that its middle name is
 “Engineering”. To me, one of the attributes of engineering is the art
