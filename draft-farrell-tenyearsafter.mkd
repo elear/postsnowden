@@ -1414,7 +1414,7 @@ The Battle is Joined
 --------------------
 
 There were three major developments in cryptography in the early
-1990s. First, Phil Zimmerman released PGP (Pretty Good Privacy), a
+1990s. First, Phil Zimmermann released PGP (Pretty Good Privacy), a
 package to encrypt email messages. In 1993, AT&T planned to release
 the TSD-3600, an easy-to-use phone encryptor aimed at business
 travelers. Shortly after that, the Netscape Corporation released SSL
@@ -1428,7 +1428,7 @@ encryption software was regarded as a weapon, so exports required a
 license. It was also alleged to infringe the patents on the RSA
 algorithm. Needless to say, both issues were problematic for what was
 intended to be open source software. Eventually, the criminal
-investigation into Zimmerman’s role in the spread of PGP overseas was
+investigation into Zimmermann’s role in the spread of PGP overseas was
 dropped, but the threat of such investigations remained to deter
 others{{Levy2001}}.
 
