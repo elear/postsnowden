@@ -68,6 +68,19 @@ informative:
         author:
             organization: IETF
         date: 2023
+    Curtiz:
+    	title: Casablanca
+	author:
+	    -
+	        director: Michael Curtiz
+	    -
+	        name: Julius J. Epstein
+	    -
+	        name: Philip G. Epstein
+	    -
+	        name: Howard Koch
+	date: 1942
+
     dual-ec:
         target: https://eprint.iacr.org/2015/767.pdf
         title: Dual EC, A standardized back door
@@ -1356,18 +1369,21 @@ Meanwhile, the U.S. was concerned about protecting
 unclassified data {{Landau2014}}. In 1973 and again in 1974, the
 National Bureau of Standards (NBS) put out a call for a strong, modern
 encryption algorithm. IBM submitted Lucifer, an internally developed
-algorithm. It seemed quite strong, so NBS sent it off to the NSA to
+algorithm based on what has become known as a 16-round Feistel network. The
+original version used a long key.
+It seemed quite strong, so NBS sent it off to the NSA to
 get their take. The eventual design, which was adopted in 1976 as the
-Data Encryption Standard (DES), differed in two important ways from
-Lucifer. First, the so-called S-boxes, the source of the cryptologic
-strength of DES, were changed, and were demonstrably not composed of
+Data Encryption Standard (DES), differed in some important ways from
+Lucifer. 
+First, the so-called S-boxes, the source of the cryptologic
+strength of DES, were changed, and were now demonstrably not composed of
 random integers. Many researchers alleged that the S-boxes contained
 an NSA back door. It took 20 years for the truth to come out: the
 S-boxes were in fact strengthened, not weakened. Most likely, IBM
 independently discovered the attack now known as differential
 cryptanalysis, though some scholars suspect that the NSA told them
 about it. The non-random S-boxes protected against this attack. The
-other change, though, was clearly insisted on by the NSA: the key size
+second change, though, was clearly insisted on by the NSA: the key size
 was shortened, from Lucifer’s 112 bits to DES’s 56 bits. We now know
 that the NSA wanted a 48-bit key size, while IBM wanted 64 bits; they
 compromised at 56 bits.
@@ -1445,7 +1461,7 @@ eavesdroppers to consult a pair of (presumably secure) internal
 databases and decrypt all communications protected by the chip. The
 Clipper chip proved to be extremely unpopular with industry; that AT&T
 Bell Labs’ Matt Blaze found a weakness in the design{{Blaze1994}}, one
-that let you use Skipjack without the key escrow feature didn’t help
+that let you use Skipjack without the key escrow feature, didn’t help
 its reputation.
 
 The third major development, SSL, was even trickier. SSL was aimed at
@@ -1544,8 +1560,9 @@ is encrypted or after it is decrypted, and don’t worry about the
 strength of the algorithms.
 
 The privacy community, worldwide, was appalled, though perhaps they
-shouldn’t have been. It calls to mind Claude Rains' famous line from
-Casablanca: “I’m shocked, shocked to find that gambling is going on in
+shouldn’t have been. It calls to mind the line that Claude Rains'
+character uttered in the movie
+Casablanca {{Curtiz}}: “I’m shocked, shocked to find that gambling is going on in
 here.” The immediate and continuing reaction was to deploy more
 encryption. The standards have long existed; what was missing was
 adoption. One barrier was the difficulty and expense of getting
