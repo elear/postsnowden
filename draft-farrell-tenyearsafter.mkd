@@ -1142,7 +1142,7 @@ fix the problem 4) the protocol is already there but market, law and a
 host of other societal and political issues do not allow for
 widespread implementation.
 
-IETF did not purposefully take a long time to adopt protocols that
+IETF did not purposefully take a long time to adopt and impelement protocols that
 enabled human rights. There were technical and political issues that
 created barriers. For example, the IETF community attempted a few
 times before to create a protocol that would disclose the necessary
@@ -1201,7 +1201,7 @@ Registries that are in charge of registration of IP addresses have
 shown resilience to these requests.  However, some tech-companies, for
 example Cogent {{Roth2022}}, decided not to serve sanctioned countries
 and over-comply with sanctions. Over-compliance with sanctions could
-hamper ordinary people's access to the Internet.
+hamper ordinary people's access to the Internet. 
 
 Perhaps we can solve some of these problems by undertaking a thorough
 impact assessment and contextualization to reveal how and why Internet
