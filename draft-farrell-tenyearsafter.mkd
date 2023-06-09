@@ -1,7 +1,7 @@
 ---
 title: Reflections on Ten Years Past The Snowden Revelations
 abbrev: Ten Years After
-docname: draft-farrell-tenyearsafter-00
+docname: draft-farrell-tenyearsafter-01
 category: info
 submissionType: independent
 
@@ -50,8 +50,8 @@ informative:
         author:
             organization: IETF
         date: 2023
-    BoF-session:
-        title: IETF 88 BoF session
+    Perpass-BoF:
+        title: IETF 88 Perpass BoF session
         target: https://www.ietf.org/proceedings/88/perpass.html
         author:
             organization: IETF
@@ -69,17 +69,17 @@ informative:
             organization: IETF
         date: 2023
     Curtiz:
-    	title: Casablanca
-	author:
-	    -
-	        director: Michael Curtiz
-	    -
-	        name: Julius J. Epstein
-	    -
-	        name: Philip G. Epstein
-	    -
-	        name: Howard Koch
-	date: 1942
+        title: Casablanca
+        author:
+        -
+            name: Michael Curtiz
+        -
+            name: Julius J. Epstein
+        -
+            name: Philip G. Epstein
+        -
+            name: Howard Koch
+        date: 1942
 
     dual-ec:
         target: https://eprint.iacr.org/2015/767.pdf
@@ -355,18 +355,18 @@ informative:
        target: https://weakdh.org/imperfect-forward-secrecy.pdf
        date: 2015
     BellovinRescorla2006:
-    	title: Deploying a New Hash Algorithm
-	author:
-	   -
-	   	ins: S.M. Bellovin
-		Name: Steven M. Bellovin
-	   -
-	   	ins: E.K. Rescorla
-		Name: Eric K. rescorla
-	date: 2006
-	target: https://www.cs.columbia.edu/~smb/papers/new-hash.pdf
-	seriesinfo:
-		"Proceedings of NDSS '06"
+        title: Deploying a New Hash Algorithm
+        author:
+            -
+             ins: S.M. Bellovin
+             name: Steven M. Bellovin
+            -
+             ins: E.K. Rescorla
+             name: Eric K. rescorla
+        date: 2006
+        target: https://www.cs.columbia.edu/~smb/papers/new-hash.pdf
+        seriesinfo:
+            "Proceedings of NDSS '06"
     Blaze1994:
        title: Protocol Failures in the Escrowed Encryption Standard
        author:
@@ -479,6 +479,13 @@ informative:
        date: 2019
        seriesinfo:
            "Profile Books, ISBN 9781781256855"
+    Badii2023:
+        title: Sanctions and the Internet
+        author:
+            ins: F. Badii   
+            name: Farzaneh Badii
+        target: https://digitalmedusa.org/wp-content/uploads/2023/05/SanctionsandtheInternet-DigitalMedusa.pdf
+        date: 2023
 
 --- abstract
 
@@ -872,7 +879,7 @@ a new mailing list {{perpass}} that ended up being a useful venue for triaging
 proposals for work on these topics. At the November 2013 IETF meeting, there
 was a lively and very well attended plenary session {{plenary-video}} on
 "hardening the Internet" against such attacks, followed by a "birds of a
-feather" {{BoF-session}} devoted to more detailed discussion of possible
+feather" {{Perpass-BoF}} devoted to more detailed discussion of possible
 actions in terms of new working groups, protocols and best-current-practice
 (BCP) documents that could help improve matters.  This was followed in
 February/March 2014 by a joint IAB/W3C workshop on "strengthening the Internet
@@ -1201,12 +1208,12 @@ Registries that are in charge of registration of IP addresses have
 shown resilience to these requests.  However, some tech-companies, for
 example Cogent {{Roth2022}}, decided not to serve sanctioned countries
 and over-comply with sanctions. Over-compliance with sanctions could
-hamper ordinary people's access to the Internet. 
+hamper ordinary people's access to the Internet. {{Badii2023}}
 
 Perhaps we can solve some of these problems by undertaking a thorough
 impact assessment and contextualization to reveal how and why Internet
 protocols affect human rights (something Fidler and I argued
-for{{?Badii2021=DOI.10.5325/jinfopoli.11.2021.0376}}). Contextualization and
+for {{?Badii2021=DOI.10.5325/jinfopoli.11.2021.0376}}). Contextualization and
 impact assessment can reveal how each Internet protocol or each line
 of code, in which systems, have an impact on which and whose human
 rights.
@@ -1665,6 +1672,10 @@ No changes to IANA processes are made by this memo.
 
 Changes from Earlier Versions
 =============================
+
+Draft -01:
+
+  * Changes based on ISE review
 
 Draft -00:
 
