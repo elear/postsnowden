@@ -1400,7 +1400,7 @@ compromised at 56 bits.
 Whitfield Diffie and Martin Hellman, at Stanford University, wondered
 about the 56-bit keys. In 1979, they published a paper demonstrating
 that the U.S. government, but few others, could afford to build a
-brute-force cracking machine, one that could try all 2^56 possible
+brute-force cracking machine, one that could try all 2<sup>56</sup> possible
 keys to crack a message. NSA denied tampering with the design; a
 Senate investigating committee found that that was correct, but did
 not discuss the shortened key length issue.
@@ -1575,7 +1575,7 @@ Casablanca {{Curtiz}}: “I’m shocked, shocked to find that gambling is going 
 here.” The immediate and continuing reaction was to deploy more
 encryption. The standards have long existed; what was missing was
 adoption. One barrier was the difficulty and expense of getting
-certificates to use with TLS; that void was filled by Let's Encrypt{{LE}},
+certificates to use with TLS; that void was filled by Let's Encrypt {{LE}},
 which made free certificates easy to get online. Today, most HTTP
 traffic is encrypted, so much so that Google’s search engine
 down-ranks sites that do not use it. Major email providers uniformly
@@ -1597,7 +1597,7 @@ software, bugs and operational errors by end-user sites persist.
 
 ## Whither the IETF?
 Signal intelligence agencies, not just the NSA, but its peers around
-the globe- most major countries have their own—are not going to go
+the globe—most major countries have their own—are not going to go
 away. The challenges that have beset the NSA are common to all such
 agencies, and their solutions are likely the same. The question is
 what should be done to protect individual privacy. A number of strong
@@ -1624,7 +1624,7 @@ lengths will need to change, perhaps drastically. Is the IETF ready?
 What will happen to, say, DNSSEC if key lengths become drastically
 longer? Backwards compatibility will remain important, but that, of
 course, opens the door to other attacks. We’ve long thought about
-them; we need to be sure that our mechanisms work---we've
+them; we need to be sure that our mechanisms work—we've
 been surprised in the past.{{BellovinRescorla2006}}
 
 We also need to worry more about metadata. General Michael Hayden,
@@ -1634,7 +1634,7 @@ attempts to hide metadata can have side-effects. To give a trivial
 example, Tor is quite strong, but if your exit node is in a different
 country than you are in, web sites that use IP geolocation may present
 their content in a language foreign to you. More generally, many
-attempts to hide metadata involving trusting a different party; that
+attempts to hide metadata involve trusting a different party; that
 party may turn out to be untrustworthy or it may itself become a
 target of attack. As another prominent IETFer has remarked,
 “Insecurity is like entropy; you can’t destroy it but you can move it
