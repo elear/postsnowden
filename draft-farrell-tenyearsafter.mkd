@@ -508,30 +508,32 @@ On June 6th, 2013, an article appeared in _The Guardian_ {{guard2013}}
 that was the beginning of a series of what have come to be known as
 the Snowden Revelations, describing certain activities of the United
 States National Security Agency (NSA).  These activities included,
-amongst others, secret court orders, secret agreements for the receipt
+amongst others; secret court orders; secret agreements for the receipt
 of so-called "meta-information" that includes source, destination, and
-timing of communications, tapping of communications lines, and other
-activities.  The breathtaking scope of the operations shocked the
-Internet technical community, and led to a sea change within the IETF,
-IAB, and many parts of the private sector.
+timing of communications; and tapping of communications lines.  The
+breathtaking scope of the operations shocked the Internet technical
+community that was reflected in a sea change within the IETF, IAB,
+and other standards organizations.
 
 Now that some years have past, it seems appropriate to reflect on that
-period of time, what effect the community's actions had, where
-security has improved, how the threat surface has evolved, what areas
-haven't improved, and where the community might invest future efforts.
+period of time, to consider what effect the community's actions had,
+where security has improved, how the threat surface has evolved, what
+areas haven't improved, and where the community might invest future
+efforts.
 
 Bruce Schneier begins this compendium of individual essays by bringing
 us back to 2013, recalling how it was for him and others to report
 what was happening, and the mindset of those involved.  Next, Stephen
-Farrell reviews the technical community's reactions, technical
-advances, and where threats remain.  Then Farzaneh Badii discusses the
-impact of those advances – or lack thereof – on human rights.  Finally
-Steven M. Bellovin puts the Snowden revelations into an ever-evolving
+Farrell reviews the technical community's reactions and in particular
+the reactions of the IETF community, technical advances, and where
+threats remain.  Then Farzaneh Badii discusses the impact of those
+advances – or lack thereof – on human rights.  Finally Steven
+M. Bellovin puts the Snowden revelations into an ever-evolving
 historical context of secrets and secret stealing that spans
 centuries, closing with some suggestions for IETF.
 
-Readers are invited to reflect for themselves on what impact we as a
-community have had – or not had, and what positive contribution the
+Readers are invited to consider what impact we as a community have
+had, what challenges remain, and what positive contribution the
 technical community can and should make to address security and
 privacy of citizens of the world.
 
