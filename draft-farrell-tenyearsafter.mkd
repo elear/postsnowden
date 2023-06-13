@@ -1102,7 +1102,7 @@ July 2015 chartered a Research Group on “Human Rights Protocol
 Considerations” (the HRPC RG). The charter of the HRPC RG stated that
 the group was established: “to research whether standards and
 protocols can enable, strengthen or threaten human rights, as defined
-in the UDHR and theInternational Covenant on Civil and Political
+in the UDHR and the International Covenant on Civil and Political
 Rights (ICCPR).”
 
 During the past decades, a few successful strides were made to create
@@ -1114,14 +1114,14 @@ well. A few examples immediately come to mind: 1) Encryption of DNS
 queries (for example DNS over HTTPS); 2) ACME protocol underpinning
 the Lets Encrypt initiative and 3) Registration Data Access Protocol
 (RDAP){{?RFC7480}},{{?RFC7481}},{{?RFC9082}},{{?RFC9083}},{{?RFC7484}},
-{{?RFC8056}}.(It is debatable that RDAP had anything to do with
+{{?RFC8056}}. (It is debatable that RDAP had anything to do with
 Snowden revelations but it is still a good example and is finally
 being implemented.)
 
 DNS Queries over HTTPS protocol aimed to encrypt DNS queries. Four
 years after RFC 7258, DoH was developed to tackle both active and
 passive monitoring of DNS queries. It is also a tool that can help
-with combatting censorship. Lets Encrypt was not an Internet protocol,
+with combatting censorship. Let's Encrypt was not an Internet protocol,
 but it was an initiative that aimed to encrypt the web and later on
 some of the automation protocols were standardized in the IETF ACME
 working group. The Registration Data Access Protocol could solve a
@@ -1151,7 +1151,7 @@ fix the problem 4) the protocol is already there but market, law and a
 host of other societal and political issues do not allow for
 widespread implementation.
 
-IETF did not purposefully take a long time to adopt and impelement protocols that
+IETF did not purposefully take a long time to adopt and implement protocols that
 enabled human rights. There were technical and political issues that
 created barriers. For example, the IETF community attempted a few
 times before to create a protocol that would disclose the necessary
@@ -1193,7 +1193,7 @@ that protect one right (for example encryption to protect the right to
 privacy or prevent surveillance) could potentially affect technical
 and policy solutions that try to protect other human rights (for
 example encryption could prevent financial institutions from
-monitoring employees network activities to detect fraudulent
+monitoring employees' network activities to detect fraudulent
 behavior). Acknowledging and identifying these conflicts can help us
 come up with alternative techniques that could protect human rights
 while not hampering other technical solutions such as
