@@ -141,7 +141,7 @@ informative:
         date: 2013
     refs-to-7258:
         title: References to RFC7258
-        target: https://datatracker.ietf.org/doc/rfc7258/referencedby/)
+        target: https://datatracker.ietf.org/doc/rfc7258/referencedby/
         author:
             organization: IETF
         date: 2023
@@ -876,7 +876,7 @@ As for the IETF's reaction, informal meetings during the July 2013 IETF meeting
 in Berlin indicated that IETF participants considered that these revelations
 showed that we needed to do more to improve the security and privacy properties
 of IETF protocols, and to help ensure deployments made better use of the
-security and privacy mechanisms that already existed. In August, the IETF setup
+security and privacy mechanisms that already existed. In August, the IETF set up
 a new mailing list {{perpass}} that ended up being a useful venue for triaging
 proposals for work on these topics. At the November 2013 IETF meeting, there
 was a lively and very well attended plenary session {{plenary-video}} on
@@ -958,8 +958,8 @@ standardise better security and privacy mechanisms developed elsewhere.
 
 In 2013, the web was largely unencrypted despite HTTPS being relatively
 usable and that was partly due to problems using the WebPKI at scale. The
-Let's Encrypt {{LE}} initiative issued it's first certificates in 2015 as
-part of it's aim to try move the web
+Let's Encrypt {{LE}} initiative issued its first certificates in 2015 as
+part of its aim to try to move the web
 towards being fully encrypted and has been extremely successful in helping
 achieve that goal.  Subsequently, the automation protocols developed for
 Let's Encrypt were standardised in the IETF's ACME {{ACME}} working group.
@@ -971,7 +971,7 @@ then have resulted in more than 90% of email being encrypted between mail
 servers and various IETF protocols have been defined in order to improve that
 situation, e.g., SMTP MTA Strict Transport Security (MTA-STS). {{?RFC8461}}
 
-Lastly, MAC addressees have historically been long-term fixed values visble to
+Lastly, MAC addresses have historically been long-term fixed values visible to
 local networks (and beyond), which enabled some tracking attacks that were
 documented in the Snowden documents. {{Toronto}} 
 Implementers/vendors and the IEEE 802
@@ -996,7 +996,7 @@ One should also note that there has been push-back against these improvements
 in security and privacy and the changes they cause for deployments. That has
 come from more or less two camps - those on whom these improvements force
 change tend to react badly, but later figure out how to adjust. The second camp
-being those who seemingly prefer not to strenghten security so as to for
+being those who seemingly prefer not to strengthen security so as to for
 example continue to achieve what they call "visibility" even in the face of the
 many engineers who correctly argue that such an anti-encryption approach
 inevitably leads to worse security overall. The recurring nature of this kind
