@@ -1,7 +1,7 @@
 ---
 title: Reflections on Ten Years Past The Snowden Revelations
 abbrev: Ten Years After
-docname: draft-farrell-tenyearsafter-01
+docname: draft-farrell-tenyearsafter-02
 category: info
 submissionType: independent
 
@@ -1652,7 +1652,12 @@ staying true to our principles.
 
 Acknowledgments
 ===============
+
 Susan Landau added many valuable comments to Steve Bellovin's essay.
+
+We thank Carsten Bormann, Brian Carpenter, Wendy Grossman, Kathleen Moriarty,
+Jan Schaumann and Paul Wouters for comments and review of this text, though
+that of course doesn't mean that they necessrily agree with the text.
 
 This document was created at the behest of Eliot Lear, who also 
 cat herded and did some editing.
@@ -1674,6 +1679,12 @@ No changes to IANA processes are made by this memo.
 
 Changes from Earlier Versions
 =============================
+
+RFC editor: please remove this section.
+
+Draft -02:
+
+  * A bunch of typo fixes and added acks.
 
 Draft -01:
 
