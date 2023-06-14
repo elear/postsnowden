@@ -1261,7 +1261,8 @@ the key, and each letter was encrypted with
 
 > C\[i\] = (P\[i\] + 3) mod 23
 
-(In his day, J, U, and W did not exist in the Latin alphabet.) Known
+(The Latin alphabet of his time had only 23 letters.)
+Known
 Arabic writings on cryptanalysis go back to at least the 8th century;
 their sophistication shows that encryption was reasonably commonly
 used. In the 9th century, Abu Yusuf Ya’qub ibn ‘Ishaq aṣ-Ṣabbah
@@ -1411,7 +1412,7 @@ not discuss the shortened key length issue.
 This, however, was not Diffie and Hellman’s greatest contribution to
 cryptology. A few years earlier, they published a paper inventing what
 is now known as public key cryptography. In 1978, Ronald Rivest, Adi
-Shamir, and Leonard Adelman devised the RSA algorithm, which made it
+Shamir, and Leonard Adleman devised the RSA algorithm, which made it
 usable. (An NSA employee, acting on his own, sent a letter warning
 that academic conferences on cryptology might violate U.S. export
 laws.)
@@ -1528,12 +1529,12 @@ protecting TOP SECRET information. But there was an asterisk attached
 to that endorsement: AES is suitable if and only if properly used and
 implemented. Therein lies the rub.
 
-The first known attempt to tamper with outside cryptographic
+The first apparent attempt to tamper with outside cryptographic
 mechanisms was discovered in 2007, when two Microsoft researchers, Dan
 Shumow and Niels Ferguson, noted an odd property of a
 NIST-standardized random number generator, DUAL_EC_DRBG. (The NBS
-renamed itself to NIST, the National Institute of Standards and
-Technology.) Random numbers, unpredictable numbers are vital for
+had been renamed to NIST, the National Institute of Standards and
+Technology.) Random numbers are vital for
 cryptography, but Shumow and Ferguson showed that if certain constants
 in DUAL_EC_DRBG were chosen in a particular way with a
 known-but-hidden other number, whoever knew that number could predict
@@ -1547,7 +1548,9 @@ more facts came out, that “both NIST and the NSA have some explaining
 to do”; I assigned my students reading on the topic—the issue didn’t
 really get any traction until six years later, when among the papers
 that Edward Snowden disclosed was the information that the NSA had
-indeed tampered with a major cryptographic standard.
+indeed tampered with a major cryptographic standard, though published
+reports did not specifically name DUAL_EC_DRBG or explain what the
+purpose was.
 
 The revelations didn’t stop there. There have been allegations that
 the NSA paid some companies to use DUAL_EC_DRBG in their
@@ -1578,7 +1581,8 @@ Casablanca {{Curtiz}}: “I’m shocked, shocked to find that gambling is going 
 here.” The immediate and continuing reaction was to deploy more
 encryption. The standards have long existed; what was missing was
 adoption. One barrier was the difficulty and expense of getting
-certificates to use with TLS; that void was filled by Let's Encrypt {{LE}},
+certificates to use with TLS, the
+successor to SSL; that void was filled by Let's Encrypt {{LE}},
 which made free certificates easy to get online. Today, most HTTP
 traffic is encrypted, so much so that Google’s search engine
 down-ranks sites that do not use it. Major email providers uniformly
@@ -1595,7 +1599,7 @@ also capable of stealing the information on them; indeed, that is a
 frequent accompanying activity, since the threat of disclosure is
 another incentive to pay for those sites that do have good enough
 backups. Major vendors have put a lot of effort into securing their
-software, bugs and operational errors by end-user sites persist.
+software, but bugs and operational errors by end-user sites persist.
 
 
 ## Whither the IETF?
@@ -1604,7 +1608,8 @@ the globe—most major countries have their own—are not going to go
 away. The challenges that have beset the NSA are common to all such
 agencies, and their solutions are likely the same. The question is
 what should be done to protect individual privacy. A number of strong
-democracies, such as Australia and the United Kingdom, are already
+democracies, such as Australia and the United Kingdom, are, in
+a resumption of the Crypto Wars,
 moving to restrict encryption. Spurred on by complaints from the FBI
 and other law enforcement agencies, the US Congress frequently
 considers bills to do the same.
@@ -1636,7 +1641,9 @@ people based on metadata” {{Ferran2014}}. But caution is necessary;
 attempts to hide metadata can have side-effects. To give a trivial
 example, Tor is quite strong, but if your exit node is in a different
 country than you are in, web sites that use IP geolocation may present
-their content in a language foreign to you. More generally, many
+their content in a language foreign to you.
+Some sites even block connections from known Tor exit nodes.
+More generally, many
 attempts to hide metadata involve trusting a different party; that
 party may turn out to be untrustworthy or it may itself become a
 target of attack. As another prominent IETFer has remarked,
