@@ -174,16 +174,16 @@ informative:
             ins: D. Kahn
             name: David Kahn
         date: 1996
-        seriesinfo:
-           "Scribner":
+        rc:
+           "Scribner"
     Borda2011:
         title: Fundamentals in Information Theory and Coding. Berlin
         author:
            ins: M. Borda
            name: Monica Borda
         date: 2011
-        seriesinfo:
-           Springer:
+        rc:
+           Springer
     Kerr2020:
         title: "Decryption Originalism: The Lessons of Burr."
         author:
@@ -200,8 +200,8 @@ informative:
         author:
            ins: F.O. Smith
            name: Francis O. Smith
-        seriesinfo:
-           "Thurston, Isley & Co":
+        rc:
+           "Thurston, Isley & Co"
         date: 1845
         target: http://books.google.com/books?id=Z45clCxsF7EC
     Slater1870:
@@ -212,8 +212,8 @@ informative:
            ins: R. Slater
            name: Robert Slater
         date: 1870
-        seriesinfo:
-           "W.R. Gray":
+        rc:
+           "W.R. Gray"
         target: http://books.google.com/books?id=MJYBAAAAQAAJ
     Headrick1991:
         title: >
@@ -223,8 +223,8 @@ informative:
            ins: D. R. Headrick
            name: Daniel R. Headrick
         date: 1991
-        seriesinfo:
-           "Oxford University Press":
+        rc:
+           "Oxford University Press"
     Kennedy1971:
         title: >
            Imperial Cable Communications and Strategy, 1870-1914
@@ -241,8 +241,8 @@ informative:
         author:
            ins: F. B. Rowlett
            name: Frank B. Rowlett
-        seriesinfo:
-           "Aegean Park Press":
+        rc:
+           "Aegean Park Press"
         date: 1988
     Miller2020:
         title: The Intelligence Coup of the Century
@@ -250,16 +250,16 @@ informative:
            ins: G. Miller
            name: Greg Miller
         date: February 11, 2020
-        seriesinfo:
-            "The Washington Post":
+        rc:
+            "The Washington Post"
         target: https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/
     Baldwin2022:
        title: Did Britain Sell Enigmas Postwar?
        author:
           ins: M. Baldwin
           name: Mark Baldwin
-       seriesinfo:
-          "Dr. Enigma (blog)":
+       rc:
+          "Dr. Enigma (blog)"
        target: https://drenigma.org/2022/03/02/did-britain-sell-enigmas-postwar/
        date: 2022
     Broad1982:
@@ -296,8 +296,8 @@ informative:
        author:
           ins: T. R. Johnson
           name: Thomas R. Johnson
-       seriesinfo:
-          NSA:
+       rc:
+          NSA
        target: https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/cryptologic-histories/cold_war_iii.pdf
        date: 1998
     Kostyuk2022:
@@ -321,8 +321,8 @@ informative:
        author:
           ins: L. Ferran
           name: Lee Ferran
-       seriesinfo:
-          "ABC News":
+       rc:
+          "ABC News"
        date: May 12, 2014
        target: https://abcnews.go.com/blogs/headlines/2014/05/ex-nsa-chief-we-kill-people-based-on-metadata
     Adrian2015:
@@ -350,8 +350,8 @@ informative:
          -
             ins:  N. Heninger
             name: Nadia Heninger
-       seriesinfo:
-          "Proceedings of the 22th ACM Conference on Computer and Communications Security (CCS)":
+       rc:
+          "Proceedings of the 22th ACM Conference on Computer and Communications Security (CCS)"
        target: https://weakdh.org/imperfect-forward-secrecy.pdf
        date: 2015
     BellovinRescorla2006:
@@ -365,14 +365,14 @@ informative:
              name: Eric K. rescorla
         date: 2006
         target: https://www.cs.columbia.edu/~smb/papers/new-hash.pdf
-        seriesinfo:
+        rc:
             "Proceedings of NDSS '06"
     Blaze1994:
        title: Protocol Failures in the Escrowed Encryption Standard
        author:
           ins: M. Blaze
           name: Matt Blaze
-       seriesinfo:
+       rc:
           "Proceedings of Second ACM Conference on Computer and Communications Security"
        date: 1994
        target: http://www.mattblaze.org/papers/eesproto.pdf
@@ -419,8 +419,8 @@ informative:
        author:
           ins: S. Levy
           name: Steven Levy
-       seriesinfo:
-          Viking:
+       rc:
+          Viking
        date: 2001
     Moore2015:
        title: >
@@ -428,8 +428,8 @@ informative:
        author:
           ins: H.D. Moore
           name: H.D. Moore
-       seriesinfo:
-          "Rapid7 Blog":
+       rc:
+          "Rapid7 Blog"
        date: 2015
        target: https://www.rapid7.com/blog/post/2015/12/20/cve-2015-7755-juniper-screenos-authentication-backdoor/
     Doria2012:
@@ -444,16 +444,16 @@ informative:
              ins: J. Liddicoat
              name: Joy Liddicoat
        date: 2012
-       seriesinfo:
-          "The Internet Society":
+       rc:
+          "The Internet Society"
        target: https://www.internetsociety.org/resources/doc/2012/human-rights-and-internet-protocols-comparing-processes-and-principles/
     Garfinkel1995:
        title: "GPG: Pretty Good Privacy"
        author:
           ins: S. Garfinkel
           name: Simson Garfinkel
-       seriesinfo:
-          "O'Reilly and Associates":
+       rc:
+          "O'Reilly and Associates"
        date: 1995
     Masnick2023:
        title: The Unintended Consequences of Internet Regulation
@@ -467,8 +467,8 @@ informative:
        author:
           ins: E. Roth
           name: Emma Roth
-       seriesinfo:
-          "The Verge":
+       rc:
+          "The Verge"
        target: https://www.theverge.com/2022/3/5/22962822/internet-backbone-provider-cogent-shuts-off-service-russia
        date: March 5, 2022
     zubhoff2019:
@@ -478,7 +478,9 @@ informative:
           name: Shoshana Zuboff
        date: 2019
        seriesinfo:
-           "Profile Books, ISBN 9781781256855"
+         ISBN: 9781781256855
+       rc:
+         Profile Books
     Badii2023:
         title: Sanctions and the Internet
         author:
