@@ -1,7 +1,7 @@
 ---
 title: Reflections on Ten Years Past The Snowden Revelations
 abbrev: Ten Years After
-docname: draft-farrell-tenyearsafter-02
+docname: draft-farrell-tenyearsafter-03
 category: info
 submissionType: independent
 
@@ -117,7 +117,7 @@ informative:
             -
                 name: Eric Rescorla
             -
-                name: Seth Schoen
+                name: Seth David Schoen
             -
                 name: Brad Warren
         date: 2019
@@ -954,7 +954,7 @@ IEEE MACSEC scheme. But there has been a fairly clear trend towards trying to
 remove cleartext from the Internet as a precursor to provide improved privacy
 when considering network observers as attackers.
 
-The IETF of course, forms only one part of the broader Internet technical
+The IETF, of course, forms only one part of the broader Internet technical
 community, and there were many non-IETF activities triggered by the Snowden
 revelations, a number of which also eventually resulted in new IETF work to
 standardise better security and privacy mechanisms developed elsewhere.
@@ -963,7 +963,7 @@ In 2013, the web was largely unencrypted despite HTTPS being relatively
 usable and that was partly due to problems using the WebPKI at scale. The
 Let's Encrypt {{LE}} initiative issued its first certificates in 2015 as
 part of its aim to try to move the web
-towards being fully encrypted and has been extremely successful in helping
+towards being fully encrypted, and has been extremely successful in helping
 achieve that goal.  Subsequently, the automation protocols developed for
 Let's Encrypt were standardised in the IETF's ACME {{ACME}} working group.
 
@@ -1007,7 +1007,7 @@ of push-back is nicely illustrated by {{?RFC1984}}. That informational document
 was published in 1996 as an IETF response to an early iteration of the
 perennial "encryption is bad" argument. In 2015, the unmodified 1996 text was
 upgraded to a Best Current Practice (BCP200) as the underlying arguments have
-not, and will not, change.
+not changed, and will not change.
 
 Looking back on all the above from a 2023 vantage point, I think that, as a
 community of Internet engineers, we got a lot right, but that today there's way
@@ -1025,7 +1025,7 @@ but hugely privacy-invasive activities of major employers of Internet
 engineers.
 
 It's noteworthy that RFC7258 doesn't consider that bad actors are limited to
-governments; and personally, I think many advertising industry schemes for
+governments, and personally, I think many advertising industry schemes for
 collecting data are egregious examples of pervasive monitoring and hence ought
 also be considered an attack on the Internet that ought be mitigated where
 possible.  However, the Internet technical community clearly hasn't acted in
@@ -1659,7 +1659,7 @@ Acknowledgments
 Susan Landau added many valuable comments to Steve Bellovin's essay.
 
 We thank Carsten Bormann, Brian Carpenter, Wendy Grossman, Kathleen Moriarty,
-Jan Schaumann and Paul Wouters for comments and review of this text, though
+Jan Schaumann, Seth David Schoen, and Paul Wouters for comments and review of this text, though
 that of course doesn't mean that they necessrily agree with the text.
 
 This document was created at the behest of Eliot Lear, who also 
