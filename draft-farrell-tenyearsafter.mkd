@@ -107,7 +107,7 @@ informative:
             -
                 name: Peter Eckersley
             -
-                name: Alan Flores-L{\'o}pez
+                name: Alan Flores-López
             -
                 name: Alex Halderman
             -
@@ -123,7 +123,7 @@ informative:
         date: 2019
     MADINAS:
         title: MADINAS WG
-        target: https://datatracker.ietf.org/wg/madinas/)
+        target: https://datatracker.ietf.org/wg/madinas/
         author:
             organization: IETF
         date: 2023
@@ -134,7 +134,8 @@ informative:
             organization: IETF
         date: 2023
     plenary-video:
-        title: IETF 88 Pleary video
+        title: >
+          IETF 88 Technical Plenary: Hardening The Internet
         target: https://www.youtube.com/watch?v=oV71hhEpQ20&pp=ygUQaWV0ZiA4OCBwbGVuYXJ5IA%3D%3D
         author:
             organization: IETF
@@ -362,7 +363,7 @@ informative:
              name: Steven M. Bellovin
             -
              ins: E.K. Rescorla
-             name: Eric K. rescorla
+             name: Eric K. Rescorla
         date: 2006
         target: https://www.cs.columbia.edu/~smb/papers/new-hash.pdf
         rc:
