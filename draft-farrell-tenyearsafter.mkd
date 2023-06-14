@@ -515,7 +515,7 @@ breathtaking scope of the operations shocked the Internet technical
 community that was reflected in a sea change within the IETF, IAB,
 and other standards organizations.
 
-Now that some years have past, it seems appropriate to reflect on that
+Now that some years have passed, it seems appropriate to reflect on that
 period of time, to consider what effect the community's actions had,
 where security has improved, how the threat surface has evolved, what
 areas haven't improved, and where the community might invest future
