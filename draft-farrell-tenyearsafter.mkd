@@ -811,14 +811,14 @@ covered by other publications.
 It started getting weird. Both Greenwald and Gellman held documents
 back so they could publish them in their books. Jake Appelbaum, who
 had not yet been accused of sexual assault by multiple women, was
-working with Poitras. He partnered with Spiegel to release an
-implant catalog from the NSA’s Tailored Access Operations group. To
-this day, I am convinced that that document was not in the Snowden
-archives: that Jake got it somehow, and it was released under the
-cover of Edward Snowden. I thought it was important enough that I
-started writing about each item in that document in my blog: ”NSA
-Exploit of the Week.” That got my website blocked by the DoD: I keep a
-framed print of the censor’s message on my wall.
+working with Poitras. He partnered with Spiegel to release an implant
+catalog from the NSA’s Tailored Access Operations group. To this day,
+I am convinced that that document was not in the Snowden archives:
+that Jake got it somehow, and it was released with the implication
+that it was from Edward Snowden. I thought it was important enough
+that I started writing about each item in that document in my blog:
+”NSA Exploit of the Week.” That got my website blocked by the DoD: I
+keep a framed print of the censor’s message on my wall.
 
 Perhaps the most surreal document disclosures were when artists
 started writing fiction based on the documents. This was in 2016, when
@@ -843,7 +843,7 @@ technologists did a lot to help secure the Internet, for example.
 
 The government didn’t do its part, though. Despite the public outcry,
 investigations by Congress, pronouncements by President Obama, and
-federal court rulings. I don’t think much has changed. The NSA
+federal court rulings, I don’t think much has changed. The NSA
 canceled a program here and a program there, and it is now more public
 about defense. But I don’t think it is any less aggressive about
 either bulk or targeted surveillance. Certainly its government
