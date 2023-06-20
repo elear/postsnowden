@@ -1268,7 +1268,7 @@ Known
 Arabic writings on cryptanalysis go back to at least the 8th century;
 their sophistication shows that encryption was reasonably commonly
 used. In the 9th century, Abu Yusuf Ya’qub ibn ‘Ishaq aṣ-Ṣabbah
-al-Kindh developed and wrote about frequency analysis as a way to
+al-Kindi developed and wrote about frequency analysis as a way to
 crack ciphers {{Borda2011}},{{Kahn1996}}.
 
 In an era of minimal literacy, though, there wasn’t that much use of
@@ -1393,7 +1393,7 @@ Lucifer.
 First, the so-called S-boxes, the source of the cryptologic
 strength of DES, were changed, and were now demonstrably not composed of
 random integers. Many researchers alleged that the S-boxes contained
-an NSA back door. It took 20 years for the truth to come out: the
+an NSA back door. It took nearly 20 years for the truth to come out: the
 S-boxes were in fact strengthened, not weakened. Most likely, IBM
 independently discovered the attack now known as differential
 cryptanalysis, though some scholars suspect that the NSA told them
@@ -1413,7 +1413,10 @@ not discuss the shortened key length issue.
 
 This, however, was not Diffie and Hellman’s greatest contribution to
 cryptology. A few years earlier, they published a paper inventing what
-is now known as public key cryptography. In 1978, Ronald Rivest, Adi
+is now known as public key cryptography.
+(In fact, public key encryption had been invented a few years earlier
+at GCHQ, but they kept their discovery classified until 1997.)
+In 1978, Ronald Rivest, Adi
 Shamir, and Leonard Adleman devised the RSA algorithm, which made it
 usable. (An NSA employee, acting on his own, sent a letter warning
 that academic conferences on cryptology might violate U.S. export
@@ -1560,7 +1563,7 @@ products. Some people have claimed that there were attempts to modify
 some IETF standards to make enough random bytes visible, to aid in
 exploiting the random number generator. A major vendor of networking
 gear, Juniper, did use DUAL_EC_DRBG in some of its products, but with
-different constants{{Checkoway2016}}. Where did these come from? Were
+different constants {{Checkoway2016}}. Where did these come from? Were
 they from the NSA or some other government? Could their source tree
 have been hacked by an intelligence agency? There was a different hack
 of their code at around the same time{{Moore2015}}. No one is talking.
