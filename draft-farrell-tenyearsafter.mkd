@@ -1053,7 +1053,7 @@ security and privacy practically possible.
 Farzaneh Badii\: Did Snowden’s revelations help with protecting human rights on the Internet?
 ========
 
-It is very difficult to scientifically measure the effect of Snowden's
+It is very difficult to empirically measure the effect of Snowden's
 revelations on human rights and the Internet. Anecdotally, we have
 been witnessing dominant regulatory and policy approaches that impact
 technologies and services that are at the core of protecting human
@@ -1064,11 +1064,9 @@ has been little progress in fixing technical and policy issues that
 help enable human rights. Snowden revelations did not have a
 revolutionary effect on our approach towards not using policies and
 technical means that have an effect on human rights, such as freedom
-of expression, freedom of association and assembly and privacy. It did
-not decrease the number of Internet shutdowns, nor the eagerness of
-authoritarian (and even to some extent democratic countries) to
-territorialize the Internet. Perhaps the revelations helped with the
-evolution of some technical and policy aspects.
+of expression, freedom of association and assembly and privacy. It did not decrease the number of 
+Internet shutdowns, nor the eagerness of authoritarian (and even to some extent democratic) countries to territorialize the Internet. 
+In some cases, the governments argued that they should have more data sovereignty or Internet sovereignty. Perhaps the revelations helped with the evolution of some technical and policy aspects.
 
 After Snowden’s revelations 10 years ago, engineers and advocates at
 the Internet Engineering Task Force (IETF) responded in a few
@@ -1115,7 +1113,7 @@ efforts were in keeping with the consensus of the IETF found in RFC
 7258.  Sometimes these protocols have anti-censorship qualities as
 well. A few examples immediately come to mind: 1) Encryption of DNS
 queries (for example DNS over HTTPS); 2) ACME protocol underpinning
-the Lets Encrypt initiative and 3) Registration Data Access Protocol
+the Let's Encrypt initiative and 3) Registration Data Access Protocol
 (RDAP){{?RFC7480}},{{?RFC7481}},{{?RFC9082}},{{?RFC9083}},{{?RFC7484}},
 {{?RFC8056}}. (It is debatable that RDAP had anything to do with
 Snowden revelations but it is still a good example and is finally
@@ -1124,19 +1122,21 @@ being implemented.)
 DNS Queries over HTTPS protocol aimed to encrypt DNS queries. Four
 years after RFC 7258, DoH was developed to tackle both active and
 passive monitoring of DNS queries. It is also a tool that can help
-with combatting censorship. Let's Encrypt was not an Internet protocol,
-but it was an initiative that aimed to encrypt the web and later on
+with combatting censorship. Before the revelations, DNS query privacy
+would have been controversial due to being expensive or unnecessary but the 
+Snowden revelations made it more plausible. 
+Let's Encrypt was not an Internet protocol, but it was an initiative that aimed to encrypt the web and later on
 some of the automation protocols were standardized in the IETF ACME
 working group. The Registration Data Access Protocol could solve a
 long term problem: redacting the domain name registrants (and IP
 address holders) sensitive, personal data but at the same time
 enabling legitimate access to the information. As to the work of HRPC
 research group, it has so far issued {{?RFC8280}} by ten Oever and
-Cath) and a number of informational Internet Drafts.
+Cath) and a number of informational Internet-Drafts.
 
 While we cannot really argue that all the movements and privacy
 preserving protocols and initiatives that enable protecting human
-rights at the infrastructure layer directly result from Snowden
+rights at the infrastructure layer solely or directly result from Snowden
 revelations, I think it is safe to say that the revelations helped
 with expediting the resolution of some of the “technical” hesitations
 that had an effect on fixing Internet protocols that enabled
@@ -1148,19 +1148,19 @@ prioritizing human rights in our Internet communities for a host of
 reasons. This could be due to: 1) human rights are sometimes in
 conflict with each other 2) it is simply not possible to mitigate the
 human right violation through the Internet protocol 3) it is not
-obvious for the engineers before the fact how the Internet protocol
-contributes to enabling protection of human rights and how they can
-fix the problem 4) the protocol is already there but market, law and a
+obvious for the engineers before-the-fact how the Internet protocol
+contributes to enabling human rights protections, or precisely what they ought to do 
+ 4) the protocol is already there but market, law and a
 host of other societal and political issues do not allow for
 widespread implementation.
 
 IETF did not purposefully take a long time to adopt and implement protocols that
 enabled human rights. There were technical and political issues that
-created barriers. For example, the IETF community attempted a few
-times before to create a protocol that would disclose the necessary
+created barriers. For example, as WHOIS was not capable of accommodating a tiered access option, 
+the IETF community attempted a few times before to create a protocol that would disclose the necessary
 information of IP holders and domain name registrants while at the
-same time protecting their data (CRIPS and IRIS are two
-examples). However, it was not until RDAP was developed and the
+same time protecting their data (CRISP and later on IRIS are the
+examples). However, IRIS was technically very difficult to implement. It was not until RDAP was developed and the
 General Data Protection Regulation (GDPR) was enacted that Internet
 Corporation for Assigned Names and Numbers had to consider instructing
 registries and registrars to implement RDAP and its community had to
@@ -1168,19 +1168,21 @@ come up with a privacy compliant policy.  Overall, a host of
 regulatory and market incentives can halt or slow down the
 implementation of human rights enabling protocols and implementation
 could depend on other organizations with their own political and
-stakeholder conflicts.
-
-Sometimes the protocol is available, but the regulatory framework and
-the market do not allow for implementation. One curious example of
-this is sanctions and their effect on IP addresses of sanctioned
-nations. Imagine if we argue that registration of IPv4 is affected by
-sanctions because it is deemed as an economic resource and because of
-scarcity and monetization. In theory, if we move to IPv6, we can solve
-the problem of access to the resources because IPv6 is not a scarce
-resource. However, as we know, adoption of IPv6 depends not only on
-technical availability. Adoption of IPv6 won’t be the complete
-solution either and depends on laws and policies and the market.
-
+stakeholder conflicts. Sometimes the protocol is available, but the regulatory framework and
+the market do not allow for implementation. 
+Sometimes the surrounding context includes 
+practical dimensions that are easy to overlook in a purely engineering-focused argument.  
+A curious example of this is sanctions regimes that target transactions involving
+economically-valuable assets.  As a result, sanctions might limit
+sanctioned nations' and entities' access to IPv4 resources (because the existence of
+a resale market for these addresses causes acquiring them to be
+interpreted as buying something of value), though the same consideration
+may not apply to IPv6 address resources.  But IPv6 adoption itself
+depends on a host of complex factors that are by no means limited to
+technical comparisons of the properties of IPv4 and IPv6.  Someone
+focused only on technical features of protocols may devise an elegant
+solution but be surprised both by deployment challenges and unintended
+downstream effects.
 Sometimes there are arguments over implementation of a protocol
 because as it is perceived, while it can protect freedom of expression
 and reduce surveillance, it can hamper other human rights. For
