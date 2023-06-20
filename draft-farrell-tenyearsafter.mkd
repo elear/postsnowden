@@ -1,7 +1,7 @@
 ---
 title: Reflections on Ten Years Past The Snowden Revelations
 abbrev: Ten Years After
-docname: draft-farrell-tenyearsafter-03
+docname: draft-farrell-tenyearsafter-04
 category: info
 submissionType: independent
 
@@ -1693,6 +1693,10 @@ Changes from Earlier Versions
 =============================
 
 RFC editor: please remove this section.
+
+Drafts -03 and -04:
+
+  * (mostly) Changes based on Schoen review
 
 Draft -02:
 
